@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <title>publishconf | blog</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="https://firebirdtools.github.io/blog/static/m-dark.css" />
+  <link rel="canonical" href="https://firebirdtools.github.io/blog/publishconf.html" />
+  <link href="https://firebirdtools.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog" />
+  <link href="https://firebirdtools.github.io/blog/feeds/mcss.atom.xml" type="application/atom+xml" rel="alternate" title="blog | mcss" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+  <meta property="og:site_name" content="blog" />
+  <meta property="og:title" content="publishconf" />
+  <meta name="twitter:title" content="publishconf" />
+  <meta property="og:url" content="https://firebirdtools.github.io/blog/publishconf.html" />
+  <meta property="og:description" content="publishconf" />
+  <meta name="twitter:description" content="publishconf" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:type" content="article" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="https://firebirdtools.github.io/blog/" id="m-navbar-brand" class="m-col-t-9 m-col-m-none m-left-m">blog</a>
+    </div>
+  </div>
+</nav></header>
+<main>
+<div class="m-container">
+  <div class="m-row">
+    <article class="m-col-m-10 m-nopadb">
+      <header>
+        <h1><a href="https://firebirdtools.github.io/blog/publishconf.html" rel="bookmark" title="Permalink to publishconf">
+          <time class="m-date" datetime="2019-01-15T00:00:00+01:00">
+            1月 <span class="m-date-day">15</span> 2019
+          </time>
+          publishconf
+        </a></h1>
+        <p>publishconf</p>
+      </header>
+      <div class="m-clearfix-l"></div>
+<!-- content -->
+<p><a href="https://mcss.mosra.cz/">mcss网站</a></p>
+<hr />
+<section id="siteurl">
+<h2><a href="#siteurl">SITEURL</a></h2>
+<p>对外发布，则设置url</p>
+<pre class="code py"><span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">'https://firebirdtools.github.io/blog'</span></pre>
+<p>本地发布，设置为空</p>
+</section>
+<hr />
+<section id="static-paths">
+<h2><a href="#static-paths">STATIC_PATHS</a></h2>
+<p><a href="https://docs.getpelican.com/en/3.4.0/settings.html?highlight=static_paths">https://docs.getpelican.com/en/3.4.0/settings.html?highlight=static_paths</a></p>
+<p>默认情况下，为 <code>STATIC_PATHS = ['images']</code> ，但rst文档中采用的是 <code>{static}</code></p>
+<p>故，设置如下：</p>
+<pre class="code py"><span class="n">STATIC_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'static'</span><span class="p">]</span></pre>
+</section>
+<hr />
+<section id="images">
+<h2><a href="#images">images</a></h2>
+<p><a href="https://mcss.mosra.cz/plugins/images/#how-to-use">https://mcss.mosra.cz/plugins/images/#how-to-use</a></p>
+<pre class="code py"><span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.css/pelican-plugins'</span><span class="p">]</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">,</span> <span class="s1">'m.images'</span><span class="p">]</span></pre>
+</section>
+<section id="alt">
+<h2><a href="#alt">:alt:</a></h2>
+<p><a href="https://mcss.mosra.cz/plugins/images/#images-figures">https://mcss.mosra.cz/plugins/images/#images-figures</a></p>
+<pre class="code py"><span class="n">M_IMAGES_REQUIRE_ALT_TEXT</span> <span class="o">=</span> <span class="bp">True</span></pre>
+</section>
+<section id="math">
+<h2><a href="#math">math</a></h2>
+<p><a href="https://mcss.mosra.cz/plugins/math-and-code/#math">https://mcss.mosra.cz/plugins/math-and-code/#math</a></p>
+<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">,</span> <span class="s1">'m.math'</span><span class="p">]</span>
+<span class="n">M_MATH_RENDER_AS_CODE</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">M_MATH_CACHE_FILE</span> <span class="o">=</span> <span class="s1">'m.math.cache'</span></pre>
+</section>
+<section id="components">
+<h2><a href="#components">components</a></h2>
+<p><a href="https://mcss.mosra.cz/plugins/components/#how-to-use">https://mcss.mosra.cz/plugins/components/#how-to-use</a></p>
+<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">,</span> <span class="s1">'m.components'</span><span class="p">]</span></pre>
+</section>
+<!-- /content -->
+      <footer>
+        <p>Posted by <a href="https://firebirdtools.github.io/blog/author/firebird.html">firebird</a> on <time datetime="2019-01-15T00:00:00+01:00">二 15 一月 2019</time> in <a href="https://firebirdtools.github.io/blog/category/mcss.html">mcss</a>. Tags: <a href="https://firebirdtools.github.io/blog/tag/pelican.html">Pelican</a>, <a href="https://firebirdtools.github.io/blog/tag/mcss.html">mcss</a>, <a href="https://firebirdtools.github.io/blog/tag/restructuredtext.html">re­Struc­tured­Text</a>, <a href="https://firebirdtools.github.io/blog/tag/git.html">git</a>.</p>
+      </footer>
+    </article>
+    <nav class="m-navpanel m-col-m-2">
+      <h3>Categories</h3>
+      <ol class="m-block-bar-m">
+        <li><a href="https://firebirdtools.github.io/blog/category/mcss.html">mcss</a></li>
+      </ol>
+      <h3>Tag cloud</h3>
+      <ul class="m-tagcloud">
+        <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/git.html">git</a></li>
+        <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/mcss.html">mcss</a></li>
+        <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/pelican.html">Pelican</a></li>
+        <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/restructuredtext.html">re­Struc­tured­Text</a></li>
+        <li class="m-tag-2"><a href="https://firebirdtools.github.io/blog/tag/test.html">test</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+</main>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>blog. Powered by <a href="https://getpelican.com">Pelican</a> and <a href="https://mcss.mosra.cz">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

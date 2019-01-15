@@ -254,6 +254,9 @@ rst示例代码
 `发布到github`_
 =============================
 
+`修改publishconf.py`_
+------------------------------
+
 ``publishconf.py`` 文件更改两处：
 
 .. code:: py
@@ -306,7 +309,11 @@ rst示例代码
    PLUGINS = ['m.htmlsanity']
    # ================================================================ #
 
-发布于github
+
+`发布于gh-pages分支`_
+----------------------------------------
+
+执行 ``pip3 install ghp-import`` ，ghp-import作用是将目录复制到存储库的gh-pages分支。
 
 .. code:: sh
 
@@ -331,6 +338,18 @@ rst示例代码
     分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。
     firebird@tools:~/github/blog$ ghp-import output -b gh-pages
     firebird@tools:~/github/blog$ git push origin gh-pages
+    Username for 'https://github.com': firebirdtools
+    Password for 'https://firebirdtools@github.com':
+    对象计数中: 7, 完成.
+    Delta compression using up to 4 threads.
+    压缩对象中: 100% (7/7), 完成.
+    写入对象中: 100% (7/7), 1.30 KiB | 1.30 MiB/s, 完成.
+    Total 7 (delta 4), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+    To https://github.com/firebirdtools/blog.git
+       7299d46..d732a02  gh-pages -> gh-pages
+    firebird@tools:~/github/blog$
+
 
 
 打开https://firebirdtools.github.io/blog，可看到带主题的网页
