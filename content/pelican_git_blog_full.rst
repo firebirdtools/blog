@@ -302,8 +302,24 @@ rst示例代码
 
 .. code:: sh
 
-    firebird@tools:~/gitcode/mcss-pelican-blog$ pelican content -s publishconf.py
-    # ......
-    # Done: Processed 0 articles, 0 drafts, ... in 0.15 seconds.
+    firebird@tools:~/github/blog$ pelican content -s publishconf.py
+    Done: Processed 1 article, 0 drafts, 0 pages, 0 hidden pages and 0 draft pages in 0.32 seconds.
+    firebird@tools:~/github/blog$ git add .
+    firebird@tools:~/github/blog$ git commit -m "first blog"
+    [master 8e133df] first blog
+     31 files changed, 10283 insertions(+)
+    ...
+    firebird@tools:~/github/blog$ git push -u origin master
+    Username for 'https://github.com': firebirdtools
+    Password for 'https://firebirdtools@github.com':
+    对象计数中: 40, 完成.
+    Delta compression using up to 4 threads.
+    压缩对象中: 100% (38/38), 完成.
+    写入对象中: 100% (40/40), 48.59 KiB | 4.05 MiB/s, 完成.
+    Total 40 (delta 12), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (12/12), done.
+    To https://github.com/firebirdtools/blog.git
+       384328f..8e133df  master -> master
+    分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。
     firebird@tools:~/gitcode/mcss-pelican-blog$ ghp-import output -b gh-pages
     firebird@tools:~/gitcode/mcss-pelican-blog$ git push origin gh-pages
