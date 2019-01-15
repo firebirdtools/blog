@@ -273,7 +273,18 @@ To https://github.com/firebirdtools/blog.git
    384328f..8e133df  master -&amp;gt; master
 分支 &lt;span class="s1"&gt;'master'&lt;/span&gt; 设置为跟踪来自 &lt;span class="s1"&gt;'origin'&lt;/span&gt; 的远程分支 &lt;span class="s1"&gt;'master'&lt;/span&gt;。
 firebird&amp;#64;tools:~/github/blog$ ghp-import output -b gh-pages
-firebird&amp;#64;tools:~/github/blog$ git push origin gh-pages&lt;/pre&gt;
+firebird&amp;#64;tools:~/github/blog$ git push origin gh-pages
+Username &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://github.com'&lt;/span&gt;: firebirdtools
+Password &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools&amp;#64;github.com'&lt;/span&gt;:
+对象计数中: &lt;span class="m"&gt;7&lt;/span&gt;, 完成.
+Delta compression using up to &lt;span class="m"&gt;4&lt;/span&gt; threads.
+压缩对象中: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt;/7&lt;span class="o"&gt;)&lt;/span&gt;, 完成.
+写入对象中: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt;/7&lt;span class="o"&gt;)&lt;/span&gt;, &lt;span class="m"&gt;1&lt;/span&gt;.30 KiB &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;.30 MiB/s, 完成.
+Total &lt;span class="m"&gt;7&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;delta &lt;span class="m"&gt;4&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;, reused &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;delta &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+remote: Resolving deltas: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;/4&lt;span class="o"&gt;)&lt;/span&gt;, completed with &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="nb"&gt;local&lt;/span&gt; objects.
+To https://github.com/firebirdtools/blog.git
+   7299d46..d732a02  gh-pages -&amp;gt; gh-pages
+firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
 &lt;p&gt;打开https://firebirdtools.github.io/blog，可看到带主题的网页&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
