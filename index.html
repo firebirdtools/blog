@@ -242,6 +242,8 @@ Serving HTTP on <span class="m">0</span>.0.0.0 port <span class="m">8000</span> 
 <hr />
 <section id="id2">
 <h2><a href="#id2">发布到github</a></h2>
+<section id="publishconf-py">
+<h3><a href="#publishconf-py">修改publishconf.py</a></h3>
 <p><code>publishconf.py</code> 文件更改两处：</p>
 <pre class="code py"><span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">'https://firebirdtools.github.io/blog'</span>
 <span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'</span><span class="p">,</span>
@@ -286,7 +288,10 @@ Serving HTTP on <span class="m">0</span>.0.0.0 port <span class="m">8000</span> 
 <span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.css/pelican-plugins'</span><span class="p">]</span>
 <span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">]</span>
 <span class="c1"># ================================================================ #</span></pre>
-<p>发布于github</p>
+</section>
+<section id="gh-pages">
+<h3><a href="#gh-pages">发布于gh-pages分支</a></h3>
+<p>执行 <code>pip3 install ghp-import</code> ，将目录复制到存储库的gh-pages分支。</p>
 <pre class="code sh">firebird&#64;tools:~/github/blog$ pelican content -s publishconf.py
 Done: Processed <span class="m">1</span> article, <span class="m">0</span> drafts, <span class="m">0</span> pages, <span class="m">0</span> hidden pages and <span class="m">0</span> draft pages in <span class="m">0</span>.32 seconds.
 firebird&#64;tools:~/github/blog$ git add .
@@ -309,6 +314,7 @@ To https://github.com/firebirdtools/blog.git
 firebird&#64;tools:~/github/blog$ ghp-import output -b gh-pages
 firebird&#64;tools:~/github/blog$ git push origin gh-pages</pre>
 <p>打开https://firebirdtools.github.io/blog，可看到带主题的网页</p>
+</section>
 </section>
 <!-- /content -->
         <footer>

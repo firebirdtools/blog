@@ -203,6 +203,8 @@ Serving HTTP on &lt;span class="m"&gt;0&lt;/span&gt;.0.0.0 port &lt;span class="
 &lt;hr /&gt;
 &lt;section id="id2"&gt;
 &lt;h2&gt;&lt;a href="#id2"&gt;发布到github&lt;/a&gt;&lt;/h2&gt;
+&lt;section id="publishconf-py"&gt;
+&lt;h3&gt;&lt;a href="#publishconf-py"&gt;修改publishconf.py&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;publishconf.py&lt;/code&gt; 文件更改两处：&lt;/p&gt;
 &lt;pre class="code py"&gt;&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools.github.io/blog'&lt;/span&gt;
 &lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -247,7 +249,10 @@ Serving HTTP on &lt;span class="m"&gt;0&lt;/span&gt;.0.0.0 port &lt;span class="
 &lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.css/pelican-plugins'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="c1"&gt;# ================================================================ #&lt;/span&gt;&lt;/pre&gt;
-&lt;p&gt;发布于github&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="gh-pages"&gt;
+&lt;h3&gt;&lt;a href="#gh-pages"&gt;发布于gh-pages分支&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;执行 &lt;code&gt;pip3 install ghp-import&lt;/code&gt; ，将目录复制到存储库的gh-pages分支。&lt;/p&gt;
 &lt;pre class="code sh"&gt;firebird&amp;#64;tools:~/github/blog$ pelican content -s publishconf.py
 Done: Processed &lt;span class="m"&gt;1&lt;/span&gt; article, &lt;span class="m"&gt;0&lt;/span&gt; drafts, &lt;span class="m"&gt;0&lt;/span&gt; pages, &lt;span class="m"&gt;0&lt;/span&gt; hidden pages and &lt;span class="m"&gt;0&lt;/span&gt; draft pages in &lt;span class="m"&gt;0&lt;/span&gt;.32 seconds.
 firebird&amp;#64;tools:~/github/blog$ git add .
@@ -270,5 +275,6 @@ To https://github.com/firebirdtools/blog.git
 firebird&amp;#64;tools:~/github/blog$ ghp-import output -b gh-pages
 firebird&amp;#64;tools:~/github/blog$ git push origin gh-pages&lt;/pre&gt;
 &lt;p&gt;打开https://firebirdtools.github.io/blog，可看到带主题的网页&lt;/p&gt;
+&lt;/section&gt;
 &lt;/section&gt;
 </content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry></feed>
