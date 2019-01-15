@@ -321,5 +321,5 @@ rst示例代码
     To https://github.com/firebirdtools/blog.git
        384328f..8e133df  master -> master
     分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。
-    firebird@tools:~/gitcode/mcss-pelican-blog$ ghp-import output -b gh-pages
-    firebird@tools:~/gitcode/mcss-pelican-blog$ git push origin gh-pages
+    firebird@tools:~/github/blog$ ghp-import output -b gh-pages
+    firebird@tools:~/github/blog$ git push origin gh-pages
