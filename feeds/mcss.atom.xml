@@ -203,7 +203,11 @@ Serving HTTP on &lt;span class="m"&gt;0&lt;/span&gt;.0.0.0 port &lt;span class="
 &lt;hr /&gt;
 &lt;section id="id2"&gt;
 &lt;h2&gt;&lt;a href="#id2"&gt;发布到github&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;publishconf.py&lt;/code&gt; 文件更改后内容：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;publishconf.py&lt;/code&gt; 文件更改两处：&lt;/p&gt;
+&lt;pre class="code py"&gt;&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools.github.io/blog'&lt;/span&gt;
+&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+               &lt;span class="s1"&gt;'https://firebirdtools.github.io/blog/static/m-dark.css'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;文件更改后内容：&lt;/p&gt;
 &lt;pre class="code py"&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
 &lt;span class="c1"&gt;# -*- coding: utf-8 -*- #&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
@@ -244,10 +248,27 @@ Serving HTTP on &lt;span class="m"&gt;0&lt;/span&gt;.0.0.0 port &lt;span class="
 &lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="c1"&gt;# ================================================================ #&lt;/span&gt;&lt;/pre&gt;
 &lt;p&gt;发布于github&lt;/p&gt;
-&lt;pre class="code sh"&gt;firebird&amp;#64;tools:~/gitcode/mcss-pelican-blog$ pelican content -s publishconf.py
-&lt;span class="c1"&gt;# ......
-# Done: Processed 0 articles, 0 drafts, ... in 0.15 seconds.
-&lt;/span&gt;firebird&amp;#64;tools:~/gitcode/mcss-pelican-blog$ ghp-import output -b gh-pages
-firebird&amp;#64;tools:~/gitcode/mcss-pelican-blog$ git push origin gh-pages&lt;/pre&gt;
+&lt;pre class="code sh"&gt;firebird&amp;#64;tools:~/github/blog$ pelican content -s publishconf.py
+Done: Processed &lt;span class="m"&gt;1&lt;/span&gt; article, &lt;span class="m"&gt;0&lt;/span&gt; drafts, &lt;span class="m"&gt;0&lt;/span&gt; pages, &lt;span class="m"&gt;0&lt;/span&gt; hidden pages and &lt;span class="m"&gt;0&lt;/span&gt; draft pages in &lt;span class="m"&gt;0&lt;/span&gt;.32 seconds.
+firebird&amp;#64;tools:~/github/blog$ git add .
+firebird&amp;#64;tools:~/github/blog$ git commit -m &lt;span class="s2"&gt;&amp;quot;first blog&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;master 8e133df&lt;span class="o"&gt;]&lt;/span&gt; first blog
+ &lt;span class="m"&gt;31&lt;/span&gt; files changed, &lt;span class="m"&gt;10283&lt;/span&gt; insertions&lt;span class="o"&gt;(&lt;/span&gt;+&lt;span class="o"&gt;)&lt;/span&gt;
+...
+firebird&amp;#64;tools:~/github/blog$ git push -u origin master
+Username &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://github.com'&lt;/span&gt;: firebirdtools
+Password &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools&amp;#64;github.com'&lt;/span&gt;:
+对象计数中: &lt;span class="m"&gt;40&lt;/span&gt;, 完成.
+Delta compression using up to &lt;span class="m"&gt;4&lt;/span&gt; threads.
+压缩对象中: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;38&lt;/span&gt;/38&lt;span class="o"&gt;)&lt;/span&gt;, 完成.
+写入对象中: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;40&lt;/span&gt;/40&lt;span class="o"&gt;)&lt;/span&gt;, &lt;span class="m"&gt;48&lt;/span&gt;.59 KiB &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="m"&gt;4&lt;/span&gt;.05 MiB/s, 完成.
+Total &lt;span class="m"&gt;40&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;delta &lt;span class="m"&gt;12&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;, reused &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;delta &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+remote: Resolving deltas: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;12&lt;/span&gt;/12&lt;span class="o"&gt;)&lt;/span&gt;, &lt;span class="k"&gt;done&lt;/span&gt;.
+To https://github.com/firebirdtools/blog.git
+   384328f..8e133df  master -&amp;gt; master
+分支 &lt;span class="s1"&gt;'master'&lt;/span&gt; 设置为跟踪来自 &lt;span class="s1"&gt;'origin'&lt;/span&gt; 的远程分支 &lt;span class="s1"&gt;'master'&lt;/span&gt;。
+firebird&amp;#64;tools:~/github/blog$ ghp-import output -b gh-pages
+firebird&amp;#64;tools:~/github/blog$ git push origin gh-pages&lt;/pre&gt;
+&lt;p&gt;打开https://firebirdtools.github.io/blog，可看到带主题的网页&lt;/p&gt;
 &lt;/section&gt;
 </content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry></feed>
