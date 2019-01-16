@@ -21,9 +21,18 @@ mcss-pelican-git blog full
 
 1. New repository
 
+.. image:: {static}/static/0_new_repository.png
+    :target: {static}/static/0_new_repository.png
+
 2. blog name
 
+.. image:: {static}/static/01_blog_name.png
+    :target: {static}/static/01_blog_name.png
+
 3. create repository
+
+.. image:: {static}/static/02_create.png
+    :target: {static}/static/02_create.png
 
 --------------------------------------------------------------------------------
 
@@ -43,6 +52,9 @@ mcss-pelican-git blog full
 --------------------
 
 执行如下命令后，再刷新浏览器上的blog网页，如我的是：https://github.com/firebirdtools/blog
+
+.. image:: {static}/static/03_test_blog.png
+    :target: {static}/static/03_test_blog.png
 
 .. code:: sh
 

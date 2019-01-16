@@ -35,8 +35,6 @@ DIRECT_TEMPLATES = ['index']
 M_CSS_FILES = ['https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600',
                 'static/m-dark.css']
 
-#M_CSS_FILES = ['https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600',
-#                'https://firebirdtools.github.io/blog/static/m-dark.css']
 M_THEME_COLOR = '#22272e'
 
 PLUGIN_PATHS = ['m.css/pelican-plugins']
@@ -57,5 +55,7 @@ M_MATH_CACHE_FILE = 'm.math.cache'
 
 
 PLUGINS += ['m.htmlsanity', 'm.components']
+
+
 
 SITEURL = 'https://firebirdtools.github.io/blog'
