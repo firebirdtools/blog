@@ -49,6 +49,7 @@
 <p>对外发布，则设置url</p>
 <pre class="code py"><span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">'https://firebirdtools.github.io/blog'</span></pre>
 <p>本地发布，设置为空</p>
+<p><a href="https://mcss.mosra.cz/plugins/htmlsanity/#siteurl-formatting">https://mcss.mosra.cz/plugins/htmlsanity/#siteurl-formatting</a></p>
 </section>
 <hr />
 <section id="static-paths">
@@ -82,6 +83,60 @@
 <p><a href="https://mcss.mosra.cz/plugins/components/#how-to-use">https://mcss.mosra.cz/plugins/components/#how-to-use</a></p>
 <pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">,</span> <span class="s1">'m.components'</span><span class="p">]</span></pre>
 </section>
+<section id="metadata">
+<h2><a href="#metadata">metadata</a></h2>
+<p>元数据可以进行一些搜索引擎的优化，包含博文的一些基础信息。</p>
+<p><a href="https://docs.getpelican.com/en/stable/content.html#file-metadata">https://docs.getpelican.com/en/stable/content.html#file-metadata</a></p>
+<p><a href="https://mcss.mosra.cz/plugins/metadata/#how-to-use">https://mcss.mosra.cz/plugins/metadata/#how-to-use</a></p>
+<pre class="code rst"><span class="gh">My super title</span>
+<span class="gh">##############</span>
+
+<span class="nc">:date:</span> <span class="nf">2010-10-03 10:20</span>
+<span class="nc">:modified:</span> <span class="nf">2010-10-04 18:40</span>
+<span class="nc">:tags:</span> <span class="nf">thats, awesome</span>
+<span class="nc">:category:</span> <span class="nf">yeah</span>
+<span class="nc">:slug:</span> <span class="nf">my-super-post</span>
+<span class="nc">:authors:</span> <span class="nf">Alexis Metaireau, Conan Doyle</span>
+<span class="nc">:summary:</span> <span class="nf">Short version for index and feeds</span></pre>
+<p>add the new fields to FORMATTED_FIELDS</p>
+<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m.metadata'</span><span class="p">]</span>
+<span class="n">FORMATTED_FIELDS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'description'</span><span class="p">,</span> <span class="s1">'badge'</span><span class="p">]</span></pre>
+<p>默认情况下如下所示：</p>
+<pre class="code py"><span class="n">M_METADATA_AUTHOR_PATH</span> <span class="o">=</span> <span class="s1">'authors'</span>
+<span class="n">M_METADATA_CATEGORY_PATH</span> <span class="o">=</span> <span class="s1">'categories'</span>
+<span class="n">M_METADATA_TAG_PATH</span> <span class="o">=</span> <span class="s1">'tags'</span></pre>
+</section>
+<section id="blocks-notes-frame">
+<h2><a href="#blocks-notes-frame">blocks-notes-frame</a></h2>
+<blockquote>
+<a href="https://mcss.mosra.cz/plugins/components/#blocks-notes-frame">https://mcss.mosra.cz/plugins/components/#blocks-notes-frame</a></blockquote>
+<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">,</span> <span class="s1">'m.components'</span><span class="p">]</span></pre>
+<pre class="code rst"><span class="p">..</span> <span class="ow">block-danger</span><span class="p">::</span> Danger block
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices a
+    erat eu suscipit. <span class="s">`Link. </span><span class="si">&lt;#&gt;</span><span class="s">`_</span>
+
+<span class="p">..</span> <span class="ow">note-success</span><span class="p">::</span> Success note
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices a
+    erat eu suscipit. <span class="s">`Link. </span><span class="si">&lt;#&gt;</span><span class="s">`_</span>
+
+<span class="p">..</span> <span class="ow">frame</span><span class="p">::</span> Frame
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices a
+    erat eu suscipit. <span class="s">`Link. </span><span class="si">&lt;#&gt;</span><span class="s">`_</span></pre>
+</section>
+<section id="colors">
+<h2><a href="#colors">Col&shy;ors</a></h2>
+<p><a href="https://mcss.mosra.cz/css/components/#colors">https://mcss.mosra.cz/css/components/#colors</a></p>
+<blockquote>
+<a href="https://mcss.mosra.cz/css/components/#text">col&shy;or a block of text</a></blockquote>
+</section>
+<section id="code">
+<h2><a href="#code">Code</a></h2>
+<p><a href="https://mcss.mosra.cz/plugins/math-and-code/#code">https://mcss.mosra.cz/plugins/math-and-code/#code</a></p>
+<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m-htmlsanity'</span><span class="p">,</span> <span class="s1">'m.code'</span><span class="p">]</span></pre>
+</section>
 <!-- /content -->
       <footer>
         <p>Posted by <a href="https://firebirdtools.github.io/blog/author/firebird.html">firebird</a> on <time datetime="2019-01-15T00:00:00+01:00">二 15 一月 2019</time> in <a href="https://firebirdtools.github.io/blog/category/mcss.html">mcss</a>. Tags: <a href="https://firebirdtools.github.io/blog/tag/pelican.html">Pelican</a>, <a href="https://firebirdtools.github.io/blog/tag/mcss.html">mcss</a>, <a href="https://firebirdtools.github.io/blog/tag/restructuredtext.html">re­Struc­tured­Text</a>, <a href="https://firebirdtools.github.io/blog/tag/git.html">git</a>.</p>
@@ -98,7 +153,6 @@
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/mcss.html">mcss</a></li>
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/pelican.html">Pelican</a></li>
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/restructuredtext.html">re­Struc­tured­Text</a></li>
-        <li class="m-tag-2"><a href="https://firebirdtools.github.io/blog/tag/test.html">test</a></li>
       </ul>
     </nav>
   </div>
