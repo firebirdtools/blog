@@ -27,6 +27,8 @@ publishconf
 
 本地发布，设置为空
 
+https://mcss.mosra.cz/plugins/htmlsanity/#siteurl-formatting
+
 --------------------------------------------------------------------------------
 
 `STATIC_PATHS`_
@@ -82,3 +84,84 @@ https://mcss.mosra.cz/plugins/components/#how-to-use
 .. code:: py
 
     PLUGINS += ['m.htmlsanity', 'm.components']
+
+
+`metadata`_
+================
+
+元数据可以进行一些搜索引擎的优化，包含博文的一些基础信息。
+
+https://docs.getpelican.com/en/stable/content.html#file-metadata
+
+https://mcss.mosra.cz/plugins/metadata/#how-to-use
+
+.. code:: rst
+
+    My super title
+    ##############
+
+    :date: 2010-10-03 10:20
+    :modified: 2010-10-04 18:40
+    :tags: thats, awesome
+    :category: yeah
+    :slug: my-super-post
+    :authors: Alexis Metaireau, Conan Doyle
+    :summary: Short version for index and feeds
+
+add the new fields to FORMATTED_FIELDS
+
+.. code:: py
+
+    PLUGINS += ['m.metadata']
+    FORMATTED_FIELDS += ['description', 'badge']
+
+默认情况下如下所示：
+
+.. code:: py
+
+    M_METADATA_AUTHOR_PATH = 'authors'
+    M_METADATA_CATEGORY_PATH = 'categories'
+    M_METADATA_TAG_PATH = 'tags'
+
+`blocks-notes-frame`_
+======================
+
+    https://mcss.mosra.cz/plugins/components/#blocks-notes-frame
+
+.. code:: py
+
+    PLUGINS += ['m.htmlsanity', 'm.components']
+
+.. code:: rst
+
+    .. block-danger:: Danger block
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices a
+        erat eu suscipit. `Link. <#>`_
+
+    .. note-success:: Success note
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices a
+        erat eu suscipit. `Link. <#>`_
+
+    .. frame:: Frame
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices a
+        erat eu suscipit. `Link. <#>`_
+
+
+`Col­ors`_
+======================
+
+https://mcss.mosra.cz/css/components/#colors
+
+ `col­or a block of text <https://mcss.mosra.cz/css/components/#text>`_
+
+`Code`_
+======================
+
+https://mcss.mosra.cz/plugins/math-and-code/#code
+
+.. code:: py
+
+    PLUGINS += ['m-htmlsanity', 'm.code']

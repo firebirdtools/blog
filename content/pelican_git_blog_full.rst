@@ -353,3 +353,26 @@ rst示例代码
 
 
 打开https://firebirdtools.github.io/blog，可看到带主题的网页
+
+
+`修改publishconf.py 2`_
+------------------------------
+
+实际只需设置STATIC_PATHS，就不用在其他地方添加网址了。
+
+.. code:: py
+
+    SITEURL = 'https://firebirdtools.github.io/blog'
+    M_CSS_FILES = ['https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600',
+                   'static/m-dark.css']
+    STATIC_PATHS = ['static']
+
+
+.. code:: sh
+
+    pelican content -s publishconf.py
+    git add .
+    git commit -m "first blog"
+    git push -u origin master
+    ghp-import output -b gh-pages
+    git push origin gh-pages
