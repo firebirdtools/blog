@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - VSCode</title><link href="https://firebirdtools.github.io/blog/" rel="alternate"></link><link href="https://firebirdtools.github.io/blog/feeds/vscode.atom.xml" rel="self"></link><id>https://firebirdtools.github.io/blog/</id><updated>2019-01-13T00:00:00+01:00</updated><entry><title>hexdump for VSCode</title><link href="https://firebirdtools.github.io/blog/hexdump-for-vscode.html" rel="alternate"></link><published>2019-01-13T00:00:00+01:00</published><updated>2019-01-13T00:00:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-13:/blog/hexdump-for-vscode.html</id><summary type="html">&lt;p&gt;以十六进制显示指定的文件&lt;/p&gt;
+</summary><content type="html">&lt;section id="id1"&gt;
+&lt;h2&gt;主要特点&lt;/h2&gt;
+&lt;p&gt;右键单击资源管理器中的文件以查看Show Hexdump
+显示hexdump&lt;/p&gt;
+&lt;p&gt;将鼠标悬停在数据部分中以查看数值
+悬停DataView&lt;/p&gt;
+&lt;p&gt;将选项悬停在一个字符串中进行预览
+悬停字符串&lt;/p&gt;
+&lt;p&gt;右键单击hexdump以查看更多选项
+上下文菜单&lt;/p&gt;
+&lt;p&gt;着色修改后的字节
+修改字节&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="id2"&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装Visual Studio代码（1.17.0或更高版本）&lt;/li&gt;
+&lt;li&gt;启动代码&lt;/li&gt;
+&lt;li&gt;从命令面板ctrl+shift+p（Windows，Linux）或cmd+shift+p（OS X）&lt;/li&gt;
+&lt;li&gt;选择 Install Extension&lt;/li&gt;
+&lt;li&gt;选择扩展名 hexdump for VSCode&lt;/li&gt;
+&lt;li&gt;重新加载Visual Studio代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content><category term="VSCode"></category><category term="hex"></category></entry></feed>

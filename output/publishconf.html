@@ -5,6 +5,7 @@
   <title>publishconf | blog</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="https://firebirdtools.github.io/blog/static/m-dark.css" />
+  <link rel="icon" href="https://firebirdtools.github.io/blog/f" type="i" />
   <link rel="canonical" href="https://firebirdtools.github.io/blog/publishconf.html" />
   <link href="https://firebirdtools.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog" />
   <link href="https://firebirdtools.github.io/blog/feeds/mcss.atom.xml" type="application/atom+xml" rel="alternate" title="blog | mcss" />
@@ -24,6 +25,16 @@
   <div class="m-container">
     <div class="m-row">
       <a href="https://firebirdtools.github.io/blog/" id="m-navbar-brand" class="m-col-t-9 m-col-m-none m-left-m">blog</a>
+      <a id="m-navbar-show" href="#navigation" title="Show navigation" class="m-col-t-3 m-hide-m m-text-right"></a>
+      <a id="m-navbar-hide" href="#" title="Hide navigation" class="m-col-t-3 m-hide-m m-text-right"></a>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-12 m-col-m-none">
+            <li><a href="https://www.firebirdtool.com/">FBL</a></li>
+            <li><a href="https://www.firebirdtool.com/doc-cpplogging/">cpplogging-doc</a></li>
+          </ol>
+        </div>
+      </div>
     </div>
   </div>
 </nav></header>
@@ -47,7 +58,7 @@
 <section id="siteurl">
 <h2><a href="#siteurl">SITEURL</a></h2>
 <p>对外发布，则设置url</p>
-<pre class="code py"><span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">'https://firebirdtools.github.io/blog'</span></pre>
+<pre class="m-code"><span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;https://firebirdtools.github.io/blog&#39;</span></pre>
 <p>本地发布，设置为空</p>
 <p><a href="https://mcss.mosra.cz/plugins/htmlsanity/#siteurl-formatting">https://mcss.mosra.cz/plugins/htmlsanity/#siteurl-formatting</a></p>
 </section>
@@ -57,38 +68,38 @@
 <p><a href="https://docs.getpelican.com/en/3.4.0/settings.html?highlight=static_paths">https://docs.getpelican.com/en/3.4.0/settings.html?highlight=static_paths</a></p>
 <p>默认情况下，为 <code>STATIC_PATHS = ['images']</code> ，但rst文档中采用的是 <code>{static}</code></p>
 <p>故，设置如下：</p>
-<pre class="code py"><span class="n">STATIC_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'static'</span><span class="p">]</span></pre>
+<pre class="m-code"><span class="n">STATIC_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;static&#39;</span><span class="p">]</span></pre>
 </section>
 <hr />
 <section id="images">
 <h2><a href="#images">images</a></h2>
 <p><a href="https://mcss.mosra.cz/plugins/images/#how-to-use">https://mcss.mosra.cz/plugins/images/#how-to-use</a></p>
-<pre class="code py"><span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.css/pelican-plugins'</span><span class="p">]</span>
-<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">,</span> <span class="s1">'m.images'</span><span class="p">]</span></pre>
+<pre class="m-code"><span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m.css/pelican-plugins&#39;</span><span class="p">]</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m.htmlsanity&#39;</span><span class="p">,</span> <span class="s1">&#39;m.images&#39;</span><span class="p">]</span></pre>
 </section>
 <section id="alt">
 <h2><a href="#alt">:alt:</a></h2>
 <p><a href="https://mcss.mosra.cz/plugins/images/#images-figures">https://mcss.mosra.cz/plugins/images/#images-figures</a></p>
-<pre class="code py"><span class="n">M_IMAGES_REQUIRE_ALT_TEXT</span> <span class="o">=</span> <span class="bp">True</span></pre>
+<pre class="m-code"><span class="n">M_IMAGES_REQUIRE_ALT_TEXT</span> <span class="o">=</span> <span class="bp">True</span></pre>
 </section>
 <section id="math">
 <h2><a href="#math">math</a></h2>
 <p><a href="https://mcss.mosra.cz/plugins/math-and-code/#math">https://mcss.mosra.cz/plugins/math-and-code/#math</a></p>
-<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">,</span> <span class="s1">'m.math'</span><span class="p">]</span>
+<pre class="m-code"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">&#39;m.htmlsanity&#39;</span><span class="p">,</span> <span class="s1">&#39;m.math&#39;</span><span class="p">]</span>
 <span class="n">M_MATH_RENDER_AS_CODE</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">M_MATH_CACHE_FILE</span> <span class="o">=</span> <span class="s1">'m.math.cache'</span></pre>
+<span class="n">M_MATH_CACHE_FILE</span> <span class="o">=</span> <span class="s1">&#39;m.math.cache&#39;</span></pre>
 </section>
 <section id="components">
 <h2><a href="#components">components</a></h2>
 <p><a href="https://mcss.mosra.cz/plugins/components/#how-to-use">https://mcss.mosra.cz/plugins/components/#how-to-use</a></p>
-<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">,</span> <span class="s1">'m.components'</span><span class="p">]</span></pre>
+<pre class="m-code"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">&#39;m.htmlsanity&#39;</span><span class="p">,</span> <span class="s1">&#39;m.components&#39;</span><span class="p">]</span></pre>
 </section>
 <section id="metadata">
 <h2><a href="#metadata">metadata</a></h2>
 <p>元数据可以进行一些搜索引擎的优化，包含博文的一些基础信息。</p>
 <p><a href="https://docs.getpelican.com/en/stable/content.html#file-metadata">https://docs.getpelican.com/en/stable/content.html#file-metadata</a></p>
 <p><a href="https://mcss.mosra.cz/plugins/metadata/#how-to-use">https://mcss.mosra.cz/plugins/metadata/#how-to-use</a></p>
-<pre class="code rst"><span class="gh">My super title</span>
+<pre class="m-code"><span class="gh">My super title</span>
 <span class="gh">##############</span>
 
 <span class="nc">:date:</span> <span class="nf">2010-10-03 10:20</span>
@@ -99,19 +110,19 @@
 <span class="nc">:authors:</span> <span class="nf">Alexis Metaireau, Conan Doyle</span>
 <span class="nc">:summary:</span> <span class="nf">Short version for index and feeds</span></pre>
 <p>add the new fields to FORMATTED_FIELDS</p>
-<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m.metadata'</span><span class="p">]</span>
-<span class="n">FORMATTED_FIELDS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'description'</span><span class="p">,</span> <span class="s1">'badge'</span><span class="p">]</span></pre>
+<pre class="m-code"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">&#39;m.metadata&#39;</span><span class="p">]</span>
+<span class="n">FORMATTED_FIELDS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">,</span> <span class="s1">&#39;badge&#39;</span><span class="p">]</span></pre>
 <p>默认情况下如下所示：</p>
-<pre class="code py"><span class="n">M_METADATA_AUTHOR_PATH</span> <span class="o">=</span> <span class="s1">'authors'</span>
-<span class="n">M_METADATA_CATEGORY_PATH</span> <span class="o">=</span> <span class="s1">'categories'</span>
-<span class="n">M_METADATA_TAG_PATH</span> <span class="o">=</span> <span class="s1">'tags'</span></pre>
+<pre class="m-code"><span class="n">M_METADATA_AUTHOR_PATH</span> <span class="o">=</span> <span class="s1">&#39;authors&#39;</span>
+<span class="n">M_METADATA_CATEGORY_PATH</span> <span class="o">=</span> <span class="s1">&#39;categories&#39;</span>
+<span class="n">M_METADATA_TAG_PATH</span> <span class="o">=</span> <span class="s1">&#39;tags&#39;</span></pre>
 </section>
 <section id="blocks-notes-frame">
 <h2><a href="#blocks-notes-frame">blocks-notes-frame</a></h2>
 <blockquote>
 <a href="https://mcss.mosra.cz/plugins/components/#blocks-notes-frame">https://mcss.mosra.cz/plugins/components/#blocks-notes-frame</a></blockquote>
-<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">,</span> <span class="s1">'m.components'</span><span class="p">]</span></pre>
-<pre class="code rst"><span class="p">..</span> <span class="ow">block-danger</span><span class="p">::</span> Danger block
+<pre class="m-code"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">&#39;m.htmlsanity&#39;</span><span class="p">,</span> <span class="s1">&#39;m.components&#39;</span><span class="p">]</span></pre>
+<pre class="m-code"><span class="p">..</span> <span class="ow">block-danger</span><span class="p">::</span> Danger block
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices a
     erat eu suscipit. <span class="s">`Link. </span><span class="si">&lt;#&gt;</span><span class="s">`_</span>
@@ -135,7 +146,16 @@
 <section id="code">
 <h2><a href="#code">Code</a></h2>
 <p><a href="https://mcss.mosra.cz/plugins/math-and-code/#code">https://mcss.mosra.cz/plugins/math-and-code/#code</a></p>
-<pre class="code py"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'m-htmlsanity'</span><span class="p">,</span> <span class="s1">'m.code'</span><span class="p">]</span></pre>
+<p><a href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#code">http://docutils.sourceforge.net/docs/ref/rst/roles.html#code</a></p>
+<p><a href="https://mcss.mosra.cz/plugins/math-and-code/#code">https://mcss.mosra.cz/plugins/math-and-code/#code</a></p>
+<pre class="m-code"><span class="n">PLUGINS</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">&#39;m-htmlsanity&#39;</span><span class="p">,</span> <span class="s1">&#39;m.code&#39;</span><span class="p">]</span></pre>
+<pre class="m-inverted m-code"><span class="hll"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+</span><span class="hll">
+</span><span class="hll"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class="hll">    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Hello world!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span><span class="hll">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class="hll"><span class="p">}</span>
+</span></pre>
 </section>
 <!-- /content -->
       <footer>
@@ -146,13 +166,17 @@
       <h3>Categories</h3>
       <ol class="m-block-bar-m">
         <li><a href="https://firebirdtools.github.io/blog/category/mcss.html">mcss</a></li>
+        <li><a href="https://firebirdtools.github.io/blog/category/review.html">Review</a></li>
+        <li><a href="https://firebirdtools.github.io/blog/category/vscode.html">VSCode</a></li>
       </ol>
       <h3>Tag cloud</h3>
       <ul class="m-tagcloud">
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/git.html">git</a></li>
+        <li class="m-tag-2"><a href="https://firebirdtools.github.io/blog/tag/hex.html">hex</a></li>
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/mcss.html">mcss</a></li>
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/pelican.html">Pelican</a></li>
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/restructuredtext.html">re­Struc­tured­Text</a></li>
+        <li class="m-tag-2"><a href="https://firebirdtools.github.io/blog/tag/vscode.html">VSCode</a></li>
       </ul>
     </nav>
   </div>

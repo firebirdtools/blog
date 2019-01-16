@@ -162,6 +162,21 @@ https://mcss.mosra.cz/css/components/#colors
 
 https://mcss.mosra.cz/plugins/math-and-code/#code
 
+http://docutils.sourceforge.net/docs/ref/rst/roles.html#code
+
+https://mcss.mosra.cz/plugins/math-and-code/#code
+
 .. code:: py
 
     PLUGINS += ['m-htmlsanity', 'm.code']
+
+.. code:: c++
+    :hl_lines: 1 2 3 4 5 6
+    :class: m-inverted
+
+    #include <iostream>
+
+    int main() {
+        std::cout << "Hello world!" << std::endl;
+        return 0;
+    }

@@ -56,6 +56,38 @@ M_MATH_CACHE_FILE = 'm.math.cache'
 
 PLUGINS += ['m.htmlsanity', 'm.components']
 
+PLUGINS += ['m.htmlsanity', 'm.code']
+
+
+
+
+# =============================================================================
+AUTHOR = 'firebird'
+M_SITE_LOGO_TEXT = 'blog'
+SITENAME = 'blog'
+
+#PLUGINS = ['m.abbr',
+#          'm.components',
+#           'm.dox',
+#           'm.dot',
+#           'm.filesize',
+#           'm.gl',
+#           'm.gh',
+#           'm.htmlsanity',
+#           'm.images',
+#           'm.link',
+#           'm.math',
+#           'm.metadata',
+#           'm.plots',
+#           'm.vk']
+
+
+
+# =============================================================================
+M_FAVICON = ('firebird.png')
+M_LINKS_NAVBAR1 = [('FBL', 'https://www.firebirdtool.com/', 'FBL', []),                   
+                   ('cpplogging-doc', 'https://www.firebirdtool.com/doc-cpplogging/', 'cpplogging-doc', [
+                        ])]
 
 
 SITEURL = 'https://firebirdtools.github.io/blog'

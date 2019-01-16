@@ -87,8 +87,12 @@ mcss-pelican-git blog full
 `sample code 2`_
 --------------------
 
-+ 通过 ``pelican-quickstart`` 会自动生成相关目录和文件
-+ 使用 ``tree``  命令，可显示示例中的文件；若没有，则安装 ``sudo apt-get install tree``
+.. text-info::
+    :class: m-note m-success
+
+    + 通过 ``pelican-quickstart`` 会自动生成相关目录和文件
+    + 使用 ``tree``  命令，可显示示例中的文件；若没有，则安装 ``sudo apt-get install tree``
+
 
 .. code:: sh
 
