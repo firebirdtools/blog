@@ -5,6 +5,7 @@
   <title>mcss-pelican-git blog full | blog</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="https://firebirdtools.github.io/blog/static/m-dark.css" />
+  <link rel="icon" href="https://firebirdtools.github.io/blog/f" type="i" />
   <link rel="canonical" href="https://firebirdtools.github.io/blog/mcss-pelican-git-blog-full.html" />
   <link href="https://firebirdtools.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog" />
   <link href="https://firebirdtools.github.io/blog/feeds/mcss.atom.xml" type="application/atom+xml" rel="alternate" title="blog | mcss" />
@@ -24,6 +25,16 @@
   <div class="m-container">
     <div class="m-row">
       <a href="https://firebirdtools.github.io/blog/" id="m-navbar-brand" class="m-col-t-9 m-col-m-none m-left-m">blog</a>
+      <a id="m-navbar-show" href="#navigation" title="Show navigation" class="m-col-t-3 m-hide-m m-text-right"></a>
+      <a id="m-navbar-hide" href="#" title="Hide navigation" class="m-col-t-3 m-hide-m m-text-right"></a>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-12 m-col-m-none">
+            <li><a href="https://www.firebirdtool.com/">FBL</a></li>
+            <li><a href="https://www.firebirdtool.com/doc-cpplogging/">cpplogging-doc</a></li>
+          </ol>
+        </div>
+      </div>
     </div>
   </div>
 </nav></header>
@@ -68,7 +79,7 @@
 <hr />
 <section id="test-git">
 <h2><a href="#test-git">test git</a></h2>
-<pre class="code sh"><span class="nb">echo</span> <span class="s2">&quot;# blog&quot;</span> &gt;&gt; README.md
+<pre class="m-code"><span class="nb">echo</span> <span class="s2">&quot;# blog&quot;</span> &gt;&gt; README.md
 git init
 git add README.md
 git commit -m <span class="s2">&quot;first commit&quot;</span>
@@ -80,26 +91,26 @@ git push -u origin master</pre>
 <div class="m-image">
 <a href="https://firebirdtools.github.io/blog/static/03_test_blog.png"><img src="https://firebirdtools.github.io/blog/static/03_test_blog.png" /></a>
 </div>
-<pre class="code sh">firebird&#64;tools:~/github$ mkdir blog <span class="o">&amp;&amp;</span> <span class="nb">cd</span> blog
-firebird&#64;tools:~/github/blog$ <span class="nb">echo</span> <span class="s2">&quot;# blog&quot;</span> &gt;&gt;README.md
-firebird&#64;tools:~/github/blog$ git init
+<pre class="m-code">firebird@tools:~/github$ mkdir blog <span class="o">&amp;&amp;</span> <span class="nb">cd</span> blog
+firebird@tools:~/github/blog$ <span class="nb">echo</span> <span class="s2">&quot;# blog&quot;</span> &gt;&gt;README.md
+firebird@tools:~/github/blog$ git init
 已初始化空的 Git 仓库于 /home/firebird/github/blog/.git/
-firebird&#64;tools:~/github/blog$ git add README.md
-firebird&#64;tools:~/github/blog$ git commit -m <span class="s2">&quot;first commit&quot;</span>
+firebird@tools:~/github/blog$ git add README.md
+firebird@tools:~/github/blog$ git commit -m <span class="s2">&quot;first commit&quot;</span>
 <span class="o">[</span>master（根提交） 384328f<span class="o">]</span> first commit
  <span class="m">1</span> file changed, <span class="m">1</span> insertion<span class="o">(</span>+<span class="o">)</span>
  create mode <span class="m">100644</span> README.md
-firebird&#64;tools:~/github/blog$ git remote add origin https://github.com/firebirdtools/blog.git
-firebird&#64;tools:~/github/blog$ git push -u origin master
-Username <span class="k">for</span> <span class="s1">'https://github.com'</span>: firebirdtools
-Password <span class="k">for</span> <span class="s1">'https://firebirdtools&#64;github.com'</span>:
+firebird@tools:~/github/blog$ git remote add origin https://github.com/firebirdtools/blog.git
+firebird@tools:~/github/blog$ git push -u origin master
+Username <span class="k">for</span> <span class="s1">&#39;https://github.com&#39;</span>: firebirdtools
+Password <span class="k">for</span> <span class="s1">&#39;https://firebirdtools@github.com&#39;</span>:
 对象计数中: <span class="m">3</span>, 完成.
 写入对象中: <span class="m">100</span>% <span class="o">(</span><span class="m">3</span>/3<span class="o">)</span>, <span class="m">219</span> bytes <span class="p">|</span> <span class="m">219</span>.00 KiB/s, 完成.
 Total <span class="m">3</span> <span class="o">(</span>delta <span class="m">0</span><span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta <span class="m">0</span><span class="o">)</span>
 To https://github.com/firebirdtools/blog.git
  * <span class="o">[</span>new branch<span class="o">]</span>      master -&gt; master
-分支 <span class="s1">'master'</span> 设置为跟踪来自 <span class="s1">'origin'</span> 的远程分支 <span class="s1">'master'</span>。
-firebird&#64;tools:~/github/blog$</pre>
+分支 <span class="s1">&#39;master&#39;</span> 设置为跟踪来自 <span class="s1">&#39;origin&#39;</span> 的远程分支 <span class="s1">&#39;master&#39;</span>。
+firebird@tools:~/github/blog$</pre>
 </section>
 </section>
 <hr />
@@ -107,11 +118,13 @@ firebird&#64;tools:~/github/blog$</pre>
 <h2><a href="#pelican-quickstart">pelican-quickstart 初始化</a></h2>
 <section id="sample-code-2">
 <h3><a href="#sample-code-2">sample code 2</a></h3>
+<div class="m-note m-success m-text m-info">
 <ul>
 <li>通过 <code>pelican-quickstart</code> 会自动生成相关目录和文件</li>
 <li>使用 <code>tree</code>  命令，可显示示例中的文件；若没有，则安装 <code>sudo apt-get install tree</code></li>
 </ul>
-<pre class="code sh">firebird&#64;tools:~/github/blog$ pelican-quickstart
+</div>
+<pre class="m-code">firebird@tools:~/github/blog$ pelican-quickstart
 Welcome to pelican-quickstart v4.0.1.
 
 This script will <span class="nb">help</span> you create a new Pelican-based website.
@@ -136,7 +149,7 @@ needed by Pelican.
 &gt; Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span>
 &gt; Do you want to upload your website using GitHub Pages? <span class="o">(</span>y/N<span class="o">)</span>
 Done. Your new project is available at /home/firebird/github/blog
-firebird&#64;tools:~/github/blog$ tree
+firebird@tools:~/github/blog$ tree
 .
 ├── content
 ├── Makefile
@@ -147,7 +160,7 @@ firebird&#64;tools:~/github/blog$ tree
 └── tasks.py
 
 <span class="m">2</span> directories, <span class="m">5</span> files
-firebird&#64;tools:~/github/blog$</pre>
+firebird@tools:~/github/blog$</pre>
 </section>
 </section>
 <hr />
@@ -156,33 +169,33 @@ firebird&#64;tools:~/github/blog$</pre>
 <ol>
 <li>在项目中，安装m.css，以便引用</li>
 </ol>
-<pre class="code sh">git submodule add git://github.com/mosra/m.css</pre>
+<pre class="m-code">git submodule add git://github.com/mosra/m.css</pre>
 <ol start="2">
 <li>打开 <code>publishconf.py</code> ，添加如下代码</li>
 </ol>
-<pre class="code py"><span class="n">THEME</span> <span class="o">=</span> <span class="s1">'m.css/pelican-theme'</span>
-<span class="n">THEME_STATIC_DIR</span> <span class="o">=</span> <span class="s1">'static'</span>
-<span class="n">DIRECT_TEMPLATES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'index'</span><span class="p">]</span>
+<pre class="m-code"><span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;m.css/pelican-theme&#39;</span>
+<span class="n">THEME_STATIC_DIR</span> <span class="o">=</span> <span class="s1">&#39;static&#39;</span>
+<span class="n">DIRECT_TEMPLATES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">]</span>
 
-<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'</span><span class="p">,</span>
-               <span class="s1">'/static/m-dark.css'</span><span class="p">]</span>
-<span class="n">M_THEME_COLOR</span> <span class="o">=</span> <span class="s1">'#22272e'</span>
+<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;/static/m-dark.css&#39;</span><span class="p">]</span>
+<span class="n">M_THEME_COLOR</span> <span class="o">=</span> <span class="s1">&#39;#22272e&#39;</span>
 
-<span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.css/pelican-plugins'</span><span class="p">]</span>
-<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">]</span></pre>
+<span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m.css/pelican-plugins&#39;</span><span class="p">]</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m.htmlsanity&#39;</span><span class="p">]</span></pre>
 <section id="sample-code-3">
 <h3><a href="#sample-code-3">sample code 3</a></h3>
-<pre class="code sh">firebird&#64;tools:~/github/blog$ git submodule add git://github.com/mosra/m.css
-正克隆到 <span class="s1">'/home/firebird/github/blog/m.css'</span>...
+<pre class="m-code">firebird@tools:~/github/blog$ git submodule add git://github.com/mosra/m.css
+正克隆到 <span class="s1">&#39;/home/firebird/github/blog/m.css&#39;</span>...
 remote: Enumerating objects: <span class="m">566</span>, <span class="k">done</span>.
 remote: Counting objects: <span class="m">100</span>% <span class="o">(</span><span class="m">566</span>/566<span class="o">)</span>, <span class="k">done</span>.
 remote: Compressing objects: <span class="m">100</span>% <span class="o">(</span><span class="m">331</span>/331<span class="o">)</span>, <span class="k">done</span>.
 remote: Total <span class="m">8828</span> <span class="o">(</span>delta <span class="m">359</span><span class="o">)</span>, reused <span class="m">357</span> <span class="o">(</span>delta <span class="m">231</span><span class="o">)</span>, pack-reused <span class="m">8262</span>
 接收对象中: <span class="m">100</span>% <span class="o">(</span><span class="m">8828</span>/8828<span class="o">)</span>, <span class="m">3</span>.04 MiB <span class="p">|</span> <span class="m">49</span>.00 KiB/s, 完成.
 处理 delta 中: <span class="m">100</span>% <span class="o">(</span><span class="m">6328</span>/6328<span class="o">)</span>, 完成.
-firebird&#64;tools:~/github/blog$</pre>
+firebird@tools:~/github/blog$</pre>
 <p>publishconf.py文件添加后内容</p>
-<pre class="code py"><span class="ch">#!/usr/bin/env python</span>
+<pre class="m-code"><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># -*- coding: utf-8 -*- #</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
 
@@ -195,11 +208,11 @@ firebird&#64;tools:~/github/blog$</pre>
 <span class="kn">from</span> <span class="nn">pelicanconf</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="c1"># If your site is available via HTTPS, make sure SITEURL begins with https://</span>
-<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="n">RELATIVE_URLS</span> <span class="o">=</span> <span class="bp">False</span>
 
-<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s1">'feeds/all.atom.xml'</span>
-<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="s1">'feeds/{slug}.atom.xml'</span>
+<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/all.atom.xml&#39;</span>
+<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/{slug}.atom.xml&#39;</span>
 
 <span class="n">DELETE_OUTPUT_DIRECTORY</span> <span class="o">=</span> <span class="bp">True</span>
 
@@ -211,16 +224,16 @@ firebird&#64;tools:~/github/blog$</pre>
 
 <span class="c1"># ================================================================ #</span>
 <span class="c1"># add m.css-theme</span>
-<span class="n">THEME</span> <span class="o">=</span> <span class="s1">'m.css/pelican-theme'</span>
-<span class="n">THEME_STATIC_DIR</span> <span class="o">=</span> <span class="s1">'static'</span>
-<span class="n">DIRECT_TEMPLATES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'index'</span><span class="p">]</span>
+<span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;m.css/pelican-theme&#39;</span>
+<span class="n">THEME_STATIC_DIR</span> <span class="o">=</span> <span class="s1">&#39;static&#39;</span>
+<span class="n">DIRECT_TEMPLATES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">]</span>
 
-<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'</span><span class="p">,</span>
-                <span class="s1">'/static/m-dark.css'</span><span class="p">]</span>
-<span class="n">M_THEME_COLOR</span> <span class="o">=</span> <span class="s1">'#22272e'</span>
+<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;/static/m-dark.css&#39;</span><span class="p">]</span>
+<span class="n">M_THEME_COLOR</span> <span class="o">=</span> <span class="s1">&#39;#22272e&#39;</span>
 
-<span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.css/pelican-plugins'</span><span class="p">]</span>
-<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">]</span>
+<span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m.css/pelican-plugins&#39;</span><span class="p">]</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m.htmlsanity&#39;</span><span class="p">]</span>
 <span class="c1"># ================================================================ #</span></pre>
 </section>
 </section>
@@ -231,30 +244,30 @@ firebird&#64;tools:~/github/blog$</pre>
 <li>编辑好的rst文件放置于 <code>content\</code> 文件夹</li>
 </ol>
 <p>rst示例代码</p>
-<pre class="code rst"><span class="gh">mcss-pelican-git blog full</span>
+<pre class="m-code"><span class="gh">mcss-pelican-git blog full</span>
 <span class="gh">################################</span>
 
 <span class="nc">:date:</span> <span class="nf">2019-01-15</span>
 <span class="nc">:category:</span> <span class="nf">mcss</span>
-<span class="nc">:tags:</span> <span class="nf">Pelican, mcss, re&shy;Struc&shy;tured&shy;Text, git</span>
+<span class="nc">:tags:</span> <span class="nf">Pelican, mcss, re­Struc­tured­Text, git</span>
 <span class="nc">:summary:</span> <span class="nf">完整过程</span>
 
 <span class="s">`mcss网站 </span><span class="si">&lt;https://mcss.mosra.cz/&gt;</span><span class="s">`_</span></pre>
 <ol start="2">
 <li>本地预览，运行如下命令</li>
 </ol>
-<pre class="code sh">pelican content -s publishconf.py
+<pre class="m-code">pelican content -s publishconf.py
 <span class="nb">cd</span> output
 python3 -m http.server</pre>
 <p>访问 <a href="http://localhost:8000">http://localhost:8000</a> ，即可预览到带主题的网页。</p>
 <p>输入： <code>ctrl + c</code> 停止服务</p>
 <section id="sample-code-4">
 <h3><a href="#sample-code-4">sample code 4</a></h3>
-<pre class="code sh">firebird&#64;tools:~/github/blog$ pelican content -s publishconf.py
+<pre class="m-code">firebird@tools:~/github/blog$ pelican content -s publishconf.py
 WARNING: Feeds generated without SITEURL <span class="nb">set</span> properly may not be valid
 Done: Processed <span class="m">1</span> article, <span class="m">0</span> drafts, <span class="m">0</span> pages, <span class="m">0</span> hidden pages and <span class="m">0</span> draft pages in <span class="m">0</span>.33 seconds.
-firebird&#64;tools:~/github/blog$ <span class="nb">cd</span> output
-firebird&#64;tools:~/github/blog/output$ python3 -m http.server
+firebird@tools:~/github/blog$ <span class="nb">cd</span> output
+firebird@tools:~/github/blog/output$ python3 -m http.server
 Serving HTTP on <span class="m">0</span>.0.0.0 port <span class="m">8000</span> <span class="o">(</span>http://0.0.0.0:8000/<span class="o">)</span> ...</pre>
 </section>
 </section>
@@ -264,11 +277,11 @@ Serving HTTP on <span class="m">0</span>.0.0.0 port <span class="m">8000</span> 
 <section id="publishconf-py">
 <h3><a href="#publishconf-py">修改publishconf.py</a></h3>
 <p><code>publishconf.py</code> 文件更改两处：</p>
-<pre class="code py"><span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">'https://firebirdtools.github.io/blog'</span>
-<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'</span><span class="p">,</span>
-               <span class="s1">'https://firebirdtools.github.io/blog/static/m-dark.css'</span><span class="p">]</span></pre>
+<pre class="m-code"><span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;https://firebirdtools.github.io/blog&#39;</span>
+<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;https://firebirdtools.github.io/blog/static/m-dark.css&#39;</span><span class="p">]</span></pre>
 <p>文件更改后内容：</p>
-<pre class="code py"><span class="ch">#!/usr/bin/env python</span>
+<pre class="m-code"><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># -*- coding: utf-8 -*- #</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
 
@@ -281,11 +294,11 @@ Serving HTTP on <span class="m">0</span>.0.0.0 port <span class="m">8000</span> 
 <span class="kn">from</span> <span class="nn">pelicanconf</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="c1"># If your site is available via HTTPS, make sure SITEURL begins with https://</span>
-<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">'https://firebirdtools.github.io/blog'</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;https://firebirdtools.github.io/blog&#39;</span>
 <span class="n">RELATIVE_URLS</span> <span class="o">=</span> <span class="bp">False</span>
 
-<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s1">'feeds/all.atom.xml'</span>
-<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="s1">'feeds/{slug}.atom.xml'</span>
+<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/all.atom.xml&#39;</span>
+<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/{slug}.atom.xml&#39;</span>
 
 <span class="n">DELETE_OUTPUT_DIRECTORY</span> <span class="o">=</span> <span class="bp">True</span>
 
@@ -296,31 +309,31 @@ Serving HTTP on <span class="m">0</span>.0.0.0 port <span class="m">8000</span> 
 
 <span class="c1"># ================================================================ #</span>
 <span class="c1"># add m.css-theme</span>
-<span class="n">THEME</span> <span class="o">=</span> <span class="s1">'m.css/pelican-theme'</span>
-<span class="n">THEME_STATIC_DIR</span> <span class="o">=</span> <span class="s1">'static'</span>
-<span class="n">DIRECT_TEMPLATES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'index'</span><span class="p">]</span>
+<span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;m.css/pelican-theme&#39;</span>
+<span class="n">THEME_STATIC_DIR</span> <span class="o">=</span> <span class="s1">&#39;static&#39;</span>
+<span class="n">DIRECT_TEMPLATES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">]</span>
 
-<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'</span><span class="p">,</span>
-               <span class="s1">'https://firebirdtools.github.io/blog/static/m-dark.css'</span><span class="p">]</span>
-<span class="n">M_THEME_COLOR</span> <span class="o">=</span> <span class="s1">'#22272e'</span>
+<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;https://firebirdtools.github.io/blog/static/m-dark.css&#39;</span><span class="p">]</span>
+<span class="n">M_THEME_COLOR</span> <span class="o">=</span> <span class="s1">&#39;#22272e&#39;</span>
 
-<span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.css/pelican-plugins'</span><span class="p">]</span>
-<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m.htmlsanity'</span><span class="p">]</span>
+<span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m.css/pelican-plugins&#39;</span><span class="p">]</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m.htmlsanity&#39;</span><span class="p">]</span>
 <span class="c1"># ================================================================ #</span></pre>
 </section>
 <section id="gh-pages">
 <h3><a href="#gh-pages">发布于gh-pages分支</a></h3>
 <p>执行 <code>pip3 install ghp-import</code> ，ghp-import作用是将目录复制到存储库的gh-pages分支。</p>
-<pre class="code sh">firebird&#64;tools:~/github/blog$ pelican content -s publishconf.py
+<pre class="m-code">firebird@tools:~/github/blog$ pelican content -s publishconf.py
 Done: Processed <span class="m">1</span> article, <span class="m">0</span> drafts, <span class="m">0</span> pages, <span class="m">0</span> hidden pages and <span class="m">0</span> draft pages in <span class="m">0</span>.32 seconds.
-firebird&#64;tools:~/github/blog$ git add .
-firebird&#64;tools:~/github/blog$ git commit -m <span class="s2">&quot;first blog&quot;</span>
+firebird@tools:~/github/blog$ git add .
+firebird@tools:~/github/blog$ git commit -m <span class="s2">&quot;first blog&quot;</span>
 <span class="o">[</span>master 8e133df<span class="o">]</span> first blog
  <span class="m">31</span> files changed, <span class="m">10283</span> insertions<span class="o">(</span>+<span class="o">)</span>
 ...
-firebird&#64;tools:~/github/blog$ git push -u origin master
-Username <span class="k">for</span> <span class="s1">'https://github.com'</span>: firebirdtools
-Password <span class="k">for</span> <span class="s1">'https://firebirdtools&#64;github.com'</span>:
+firebird@tools:~/github/blog$ git push -u origin master
+Username <span class="k">for</span> <span class="s1">&#39;https://github.com&#39;</span>: firebirdtools
+Password <span class="k">for</span> <span class="s1">&#39;https://firebirdtools@github.com&#39;</span>:
 对象计数中: <span class="m">40</span>, 完成.
 Delta compression using up to <span class="m">4</span> threads.
 压缩对象中: <span class="m">100</span>% <span class="o">(</span><span class="m">38</span>/38<span class="o">)</span>, 完成.
@@ -329,11 +342,11 @@ Total <span class="m">40</span> <span class="o">(</span>delta <span class="m">12
 remote: Resolving deltas: <span class="m">100</span>% <span class="o">(</span><span class="m">12</span>/12<span class="o">)</span>, <span class="k">done</span>.
 To https://github.com/firebirdtools/blog.git
    384328f..8e133df  master -&gt; master
-分支 <span class="s1">'master'</span> 设置为跟踪来自 <span class="s1">'origin'</span> 的远程分支 <span class="s1">'master'</span>。
-firebird&#64;tools:~/github/blog$ ghp-import output -b gh-pages
-firebird&#64;tools:~/github/blog$ git push origin gh-pages
-Username <span class="k">for</span> <span class="s1">'https://github.com'</span>: firebirdtools
-Password <span class="k">for</span> <span class="s1">'https://firebirdtools&#64;github.com'</span>:
+分支 <span class="s1">&#39;master&#39;</span> 设置为跟踪来自 <span class="s1">&#39;origin&#39;</span> 的远程分支 <span class="s1">&#39;master&#39;</span>。
+firebird@tools:~/github/blog$ ghp-import output -b gh-pages
+firebird@tools:~/github/blog$ git push origin gh-pages
+Username <span class="k">for</span> <span class="s1">&#39;https://github.com&#39;</span>: firebirdtools
+Password <span class="k">for</span> <span class="s1">&#39;https://firebirdtools@github.com&#39;</span>:
 对象计数中: <span class="m">7</span>, 完成.
 Delta compression using up to <span class="m">4</span> threads.
 压缩对象中: <span class="m">100</span>% <span class="o">(</span><span class="m">7</span>/7<span class="o">)</span>, 完成.
@@ -342,17 +355,17 @@ Total <span class="m">7</span> <span class="o">(</span>delta <span class="m">4</
 remote: Resolving deltas: <span class="m">100</span>% <span class="o">(</span><span class="m">4</span>/4<span class="o">)</span>, completed with <span class="m">3</span> <span class="nb">local</span> objects.
 To https://github.com/firebirdtools/blog.git
    7299d46..d732a02  gh-pages -&gt; gh-pages
-firebird&#64;tools:~/github/blog$</pre>
+firebird@tools:~/github/blog$</pre>
 <p>打开https://firebirdtools.github.io/blog，可看到带主题的网页</p>
 </section>
 <section id="publishconf-py-2">
 <h3><a href="#publishconf-py-2">修改publishconf.py 2</a></h3>
 <p>实际只需设置STATIC_PATHS，就不用在其他地方添加网址了。</p>
-<pre class="code py"><span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">'https://firebirdtools.github.io/blog'</span>
-<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'</span><span class="p">,</span>
-               <span class="s1">'static/m-dark.css'</span><span class="p">]</span>
-<span class="n">STATIC_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'static'</span><span class="p">]</span></pre>
-<pre class="code sh">pelican content -s publishconf.py
+<pre class="m-code"><span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;https://firebirdtools.github.io/blog&#39;</span>
+<span class="n">M_CSS_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;static/m-dark.css&#39;</span><span class="p">]</span>
+<span class="n">STATIC_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;static&#39;</span><span class="p">]</span></pre>
+<pre class="m-code">pelican content -s publishconf.py
 git add .
 git commit -m <span class="s2">&quot;first blog&quot;</span>
 git push -u origin master
@@ -369,13 +382,17 @@ git push origin gh-pages</pre>
       <h3>Categories</h3>
       <ol class="m-block-bar-m">
         <li><a href="https://firebirdtools.github.io/blog/category/mcss.html">mcss</a></li>
+        <li><a href="https://firebirdtools.github.io/blog/category/review.html">Review</a></li>
+        <li><a href="https://firebirdtools.github.io/blog/category/vscode.html">VSCode</a></li>
       </ol>
       <h3>Tag cloud</h3>
       <ul class="m-tagcloud">
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/git.html">git</a></li>
+        <li class="m-tag-2"><a href="https://firebirdtools.github.io/blog/tag/hex.html">hex</a></li>
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/mcss.html">mcss</a></li>
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/pelican.html">Pelican</a></li>
         <li class="m-tag-5"><a href="https://firebirdtools.github.io/blog/tag/restructuredtext.html">re­Struc­tured­Text</a></li>
+        <li class="m-tag-2"><a href="https://firebirdtools.github.io/blog/tag/vscode.html">VSCode</a></li>
       </ul>
     </nav>
   </div>

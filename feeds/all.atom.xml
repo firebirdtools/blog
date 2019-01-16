@@ -26,7 +26,7 @@
 &lt;hr /&gt;
 &lt;section id="test-git"&gt;
 &lt;h2&gt;&lt;a href="#test-git"&gt;test git&lt;/a&gt;&lt;/h2&gt;
-&lt;pre class="code sh"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;# blog&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; README.md
+&lt;pre class="m-code"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;# blog&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; README.md
 git init
 git add README.md
 git commit -m &lt;span class="s2"&gt;&amp;quot;first commit&amp;quot;&lt;/span&gt;
@@ -38,26 +38,26 @@ git push -u origin master&lt;/pre&gt;
 &lt;div class="m-image"&gt;
 &lt;a href="https://firebirdtools.github.io/blog/static/03_test_blog.png"&gt;&lt;img src="https://firebirdtools.github.io/blog/static/03_test_blog.png" /&gt;&lt;/a&gt;
 &lt;/div&gt;
-&lt;pre class="code sh"&gt;firebird&amp;#64;tools:~/github$ mkdir blog &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; blog
-firebird&amp;#64;tools:~/github/blog$ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;# blog&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt;README.md
-firebird&amp;#64;tools:~/github/blog$ git init
+&lt;pre class="m-code"&gt;firebird@tools:~/github$ mkdir blog &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; blog
+firebird@tools:~/github/blog$ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;# blog&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt;README.md
+firebird@tools:~/github/blog$ git init
 已初始化空的 Git 仓库于 /home/firebird/github/blog/.git/
-firebird&amp;#64;tools:~/github/blog$ git add README.md
-firebird&amp;#64;tools:~/github/blog$ git commit -m &lt;span class="s2"&gt;&amp;quot;first commit&amp;quot;&lt;/span&gt;
+firebird@tools:~/github/blog$ git add README.md
+firebird@tools:~/github/blog$ git commit -m &lt;span class="s2"&gt;&amp;quot;first commit&amp;quot;&lt;/span&gt;
 &lt;span class="o"&gt;[&lt;/span&gt;master（根提交） 384328f&lt;span class="o"&gt;]&lt;/span&gt; first commit
  &lt;span class="m"&gt;1&lt;/span&gt; file changed, &lt;span class="m"&gt;1&lt;/span&gt; insertion&lt;span class="o"&gt;(&lt;/span&gt;+&lt;span class="o"&gt;)&lt;/span&gt;
  create mode &lt;span class="m"&gt;100644&lt;/span&gt; README.md
-firebird&amp;#64;tools:~/github/blog$ git remote add origin https://github.com/firebirdtools/blog.git
-firebird&amp;#64;tools:~/github/blog$ git push -u origin master
-Username &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://github.com'&lt;/span&gt;: firebirdtools
-Password &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools&amp;#64;github.com'&lt;/span&gt;:
+firebird@tools:~/github/blog$ git remote add origin https://github.com/firebirdtools/blog.git
+firebird@tools:~/github/blog$ git push -u origin master
+Username &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://github.com&amp;#39;&lt;/span&gt;: firebirdtools
+Password &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://firebirdtools@github.com&amp;#39;&lt;/span&gt;:
 对象计数中: &lt;span class="m"&gt;3&lt;/span&gt;, 完成.
 写入对象中: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;/3&lt;span class="o"&gt;)&lt;/span&gt;, &lt;span class="m"&gt;219&lt;/span&gt; bytes &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="m"&gt;219&lt;/span&gt;.00 KiB/s, 完成.
 Total &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;delta &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;, reused &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;delta &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
 To https://github.com/firebirdtools/blog.git
  * &lt;span class="o"&gt;[&lt;/span&gt;new branch&lt;span class="o"&gt;]&lt;/span&gt;      master -&amp;gt; master
-分支 &lt;span class="s1"&gt;'master'&lt;/span&gt; 设置为跟踪来自 &lt;span class="s1"&gt;'origin'&lt;/span&gt; 的远程分支 &lt;span class="s1"&gt;'master'&lt;/span&gt;。
-firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
+分支 &lt;span class="s1"&gt;&amp;#39;master&amp;#39;&lt;/span&gt; 设置为跟踪来自 &lt;span class="s1"&gt;&amp;#39;origin&amp;#39;&lt;/span&gt; 的远程分支 &lt;span class="s1"&gt;&amp;#39;master&amp;#39;&lt;/span&gt;。
+firebird@tools:~/github/blog$&lt;/pre&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;hr /&gt;
@@ -65,11 +65,13 @@ firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
 &lt;h2&gt;&lt;a href="#pelican-quickstart"&gt;pelican-quickstart 初始化&lt;/a&gt;&lt;/h2&gt;
 &lt;section id="sample-code-2"&gt;
 &lt;h3&gt;&lt;a href="#sample-code-2"&gt;sample code 2&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="m-note m-success m-text m-info"&gt;
 &lt;ul&gt;
 &lt;li&gt;通过 &lt;code&gt;pelican-quickstart&lt;/code&gt; 会自动生成相关目录和文件&lt;/li&gt;
 &lt;li&gt;使用 &lt;code&gt;tree&lt;/code&gt;  命令，可显示示例中的文件；若没有，则安装 &lt;code&gt;sudo apt-get install tree&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre class="code sh"&gt;firebird&amp;#64;tools:~/github/blog$ pelican-quickstart
+&lt;/div&gt;
+&lt;pre class="m-code"&gt;firebird@tools:~/github/blog$ pelican-quickstart
 Welcome to pelican-quickstart v4.0.1.
 
 This script will &lt;span class="nb"&gt;help&lt;/span&gt; you create a new Pelican-based website.
@@ -94,7 +96,7 @@ needed by Pelican.
 &amp;gt; Do you want to upload your website using Rackspace Cloud Files? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
 &amp;gt; Do you want to upload your website using GitHub Pages? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
 Done. Your new project is available at /home/firebird/github/blog
-firebird&amp;#64;tools:~/github/blog$ tree
+firebird@tools:~/github/blog$ tree
 .
 ├── content
 ├── Makefile
@@ -105,7 +107,7 @@ firebird&amp;#64;tools:~/github/blog$ tree
 └── tasks.py
 
 &lt;span class="m"&gt;2&lt;/span&gt; directories, &lt;span class="m"&gt;5&lt;/span&gt; files
-firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
+firebird@tools:~/github/blog$&lt;/pre&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;hr /&gt;
@@ -114,33 +116,33 @@ firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
 &lt;ol&gt;
 &lt;li&gt;在项目中，安装m.css，以便引用&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code sh"&gt;git submodule add git://github.com/mosra/m.css&lt;/pre&gt;
+&lt;pre class="m-code"&gt;git submodule add git://github.com/mosra/m.css&lt;/pre&gt;
 &lt;ol start="2"&gt;
 &lt;li&gt;打开 &lt;code&gt;publishconf.py&lt;/code&gt; ，添加如下代码&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'m.css/pelican-theme'&lt;/span&gt;
-&lt;span class="n"&gt;THEME_STATIC_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'static'&lt;/span&gt;
-&lt;span class="n"&gt;DIRECT_TEMPLATES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;m.css/pelican-theme&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;THEME_STATIC_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;static&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;DIRECT_TEMPLATES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;index&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
-&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-               &lt;span class="s1"&gt;'/static/m-dark.css'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;M_THEME_COLOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'#22272e'&lt;/span&gt;
+&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+               &lt;span class="s1"&gt;&amp;#39;/static/m-dark.css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;M_THEME_COLOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;#22272e&amp;#39;&lt;/span&gt;
 
-&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.css/pelican-plugins'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.css/pelican-plugins&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.htmlsanity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
 &lt;section id="sample-code-3"&gt;
 &lt;h3&gt;&lt;a href="#sample-code-3"&gt;sample code 3&lt;/a&gt;&lt;/h3&gt;
-&lt;pre class="code sh"&gt;firebird&amp;#64;tools:~/github/blog$ git submodule add git://github.com/mosra/m.css
-正克隆到 &lt;span class="s1"&gt;'/home/firebird/github/blog/m.css'&lt;/span&gt;...
+&lt;pre class="m-code"&gt;firebird@tools:~/github/blog$ git submodule add git://github.com/mosra/m.css
+正克隆到 &lt;span class="s1"&gt;&amp;#39;/home/firebird/github/blog/m.css&amp;#39;&lt;/span&gt;...
 remote: Enumerating objects: &lt;span class="m"&gt;566&lt;/span&gt;, &lt;span class="k"&gt;done&lt;/span&gt;.
 remote: Counting objects: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;566&lt;/span&gt;/566&lt;span class="o"&gt;)&lt;/span&gt;, &lt;span class="k"&gt;done&lt;/span&gt;.
 remote: Compressing objects: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;331&lt;/span&gt;/331&lt;span class="o"&gt;)&lt;/span&gt;, &lt;span class="k"&gt;done&lt;/span&gt;.
 remote: Total &lt;span class="m"&gt;8828&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;delta &lt;span class="m"&gt;359&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;, reused &lt;span class="m"&gt;357&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;delta &lt;span class="m"&gt;231&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;, pack-reused &lt;span class="m"&gt;8262&lt;/span&gt;
 接收对象中: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8828&lt;/span&gt;/8828&lt;span class="o"&gt;)&lt;/span&gt;, &lt;span class="m"&gt;3&lt;/span&gt;.04 MiB &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="m"&gt;49&lt;/span&gt;.00 KiB/s, 完成.
 处理 delta 中: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;6328&lt;/span&gt;/6328&lt;span class="o"&gt;)&lt;/span&gt;, 完成.
-firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
+firebird@tools:~/github/blog$&lt;/pre&gt;
 &lt;p&gt;publishconf.py文件添加后内容&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;pre class="m-code"&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
 &lt;span class="c1"&gt;# -*- coding: utf-8 -*- #&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
 
@@ -153,11 +155,11 @@ firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pelicanconf&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
 
 &lt;span class="c1"&gt;# If your site is available via HTTPS, make sure SITEURL begins with https://&lt;/span&gt;
-&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;
+&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;RELATIVE_URLS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
 
-&lt;span class="n"&gt;FEED_ALL_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'feeds/all.atom.xml'&lt;/span&gt;
-&lt;span class="n"&gt;CATEGORY_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'feeds/{slug}.atom.xml'&lt;/span&gt;
+&lt;span class="n"&gt;FEED_ALL_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;feeds/all.atom.xml&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;CATEGORY_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;feeds/{slug}.atom.xml&amp;#39;&lt;/span&gt;
 
 &lt;span class="n"&gt;DELETE_OUTPUT_DIRECTORY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
 
@@ -169,16 +171,16 @@ firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
 
 &lt;span class="c1"&gt;# ================================================================ #&lt;/span&gt;
 &lt;span class="c1"&gt;# add m.css-theme&lt;/span&gt;
-&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'m.css/pelican-theme'&lt;/span&gt;
-&lt;span class="n"&gt;THEME_STATIC_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'static'&lt;/span&gt;
-&lt;span class="n"&gt;DIRECT_TEMPLATES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;m.css/pelican-theme&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;THEME_STATIC_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;static&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;DIRECT_TEMPLATES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;index&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
-&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                &lt;span class="s1"&gt;'/static/m-dark.css'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;M_THEME_COLOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'#22272e'&lt;/span&gt;
+&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                &lt;span class="s1"&gt;&amp;#39;/static/m-dark.css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;M_THEME_COLOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;#22272e&amp;#39;&lt;/span&gt;
 
-&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.css/pelican-plugins'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.css/pelican-plugins&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.htmlsanity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="c1"&gt;# ================================================================ #&lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
 &lt;/section&gt;
@@ -189,30 +191,30 @@ firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
 &lt;li&gt;编辑好的rst文件放置于 &lt;code&gt;content\&lt;/code&gt; 文件夹&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;rst示例代码&lt;/p&gt;
-&lt;pre class="code rst"&gt;&lt;span class="gh"&gt;mcss-pelican-git blog full&lt;/span&gt;
+&lt;pre class="m-code"&gt;&lt;span class="gh"&gt;mcss-pelican-git blog full&lt;/span&gt;
 &lt;span class="gh"&gt;################################&lt;/span&gt;
 
 &lt;span class="nc"&gt;:date:&lt;/span&gt; &lt;span class="nf"&gt;2019-01-15&lt;/span&gt;
 &lt;span class="nc"&gt;:category:&lt;/span&gt; &lt;span class="nf"&gt;mcss&lt;/span&gt;
-&lt;span class="nc"&gt;:tags:&lt;/span&gt; &lt;span class="nf"&gt;Pelican, mcss, re&amp;shy;Struc&amp;shy;tured&amp;shy;Text, git&lt;/span&gt;
+&lt;span class="nc"&gt;:tags:&lt;/span&gt; &lt;span class="nf"&gt;Pelican, mcss, re­Struc­tured­Text, git&lt;/span&gt;
 &lt;span class="nc"&gt;:summary:&lt;/span&gt; &lt;span class="nf"&gt;完整过程&lt;/span&gt;
 
 &lt;span class="s"&gt;`mcss网站 &lt;/span&gt;&lt;span class="si"&gt;&amp;lt;https://mcss.mosra.cz/&amp;gt;&lt;/span&gt;&lt;span class="s"&gt;`_&lt;/span&gt;&lt;/pre&gt;
 &lt;ol start="2"&gt;
 &lt;li&gt;本地预览，运行如下命令&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code sh"&gt;pelican content -s publishconf.py
+&lt;pre class="m-code"&gt;pelican content -s publishconf.py
 &lt;span class="nb"&gt;cd&lt;/span&gt; output
 python3 -m http.server&lt;/pre&gt;
 &lt;p&gt;访问 &lt;a href="http://localhost:8000"&gt;http://localhost:8000&lt;/a&gt; ，即可预览到带主题的网页。&lt;/p&gt;
 &lt;p&gt;输入： &lt;code&gt;ctrl + c&lt;/code&gt; 停止服务&lt;/p&gt;
 &lt;section id="sample-code-4"&gt;
 &lt;h3&gt;&lt;a href="#sample-code-4"&gt;sample code 4&lt;/a&gt;&lt;/h3&gt;
-&lt;pre class="code sh"&gt;firebird&amp;#64;tools:~/github/blog$ pelican content -s publishconf.py
+&lt;pre class="m-code"&gt;firebird@tools:~/github/blog$ pelican content -s publishconf.py
 WARNING: Feeds generated without SITEURL &lt;span class="nb"&gt;set&lt;/span&gt; properly may not be valid
 Done: Processed &lt;span class="m"&gt;1&lt;/span&gt; article, &lt;span class="m"&gt;0&lt;/span&gt; drafts, &lt;span class="m"&gt;0&lt;/span&gt; pages, &lt;span class="m"&gt;0&lt;/span&gt; hidden pages and &lt;span class="m"&gt;0&lt;/span&gt; draft pages in &lt;span class="m"&gt;0&lt;/span&gt;.33 seconds.
-firebird&amp;#64;tools:~/github/blog$ &lt;span class="nb"&gt;cd&lt;/span&gt; output
-firebird&amp;#64;tools:~/github/blog/output$ python3 -m http.server
+firebird@tools:~/github/blog$ &lt;span class="nb"&gt;cd&lt;/span&gt; output
+firebird@tools:~/github/blog/output$ python3 -m http.server
 Serving HTTP on &lt;span class="m"&gt;0&lt;/span&gt;.0.0.0 port &lt;span class="m"&gt;8000&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;http://0.0.0.0:8000/&lt;span class="o"&gt;)&lt;/span&gt; ...&lt;/pre&gt;
 &lt;/section&gt;
 &lt;/section&gt;
@@ -222,11 +224,11 @@ Serving HTTP on &lt;span class="m"&gt;0&lt;/span&gt;.0.0.0 port &lt;span class="
 &lt;section id="publishconf-py"&gt;
 &lt;h3&gt;&lt;a href="#publishconf-py"&gt;修改publishconf.py&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;publishconf.py&lt;/code&gt; 文件更改两处：&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools.github.io/blog'&lt;/span&gt;
-&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-               &lt;span class="s1"&gt;'https://firebirdtools.github.io/blog/static/m-dark.css'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://firebirdtools.github.io/blog&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+               &lt;span class="s1"&gt;&amp;#39;https://firebirdtools.github.io/blog/static/m-dark.css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
 &lt;p&gt;文件更改后内容：&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;pre class="m-code"&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
 &lt;span class="c1"&gt;# -*- coding: utf-8 -*- #&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
 
@@ -239,11 +241,11 @@ Serving HTTP on &lt;span class="m"&gt;0&lt;/span&gt;.0.0.0 port &lt;span class="
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pelicanconf&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
 
 &lt;span class="c1"&gt;# If your site is available via HTTPS, make sure SITEURL begins with https://&lt;/span&gt;
-&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools.github.io/blog'&lt;/span&gt;
+&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://firebirdtools.github.io/blog&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;RELATIVE_URLS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
 
-&lt;span class="n"&gt;FEED_ALL_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'feeds/all.atom.xml'&lt;/span&gt;
-&lt;span class="n"&gt;CATEGORY_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'feeds/{slug}.atom.xml'&lt;/span&gt;
+&lt;span class="n"&gt;FEED_ALL_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;feeds/all.atom.xml&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;CATEGORY_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;feeds/{slug}.atom.xml&amp;#39;&lt;/span&gt;
 
 &lt;span class="n"&gt;DELETE_OUTPUT_DIRECTORY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
 
@@ -254,31 +256,31 @@ Serving HTTP on &lt;span class="m"&gt;0&lt;/span&gt;.0.0.0 port &lt;span class="
 
 &lt;span class="c1"&gt;# ================================================================ #&lt;/span&gt;
 &lt;span class="c1"&gt;# add m.css-theme&lt;/span&gt;
-&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'m.css/pelican-theme'&lt;/span&gt;
-&lt;span class="n"&gt;THEME_STATIC_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'static'&lt;/span&gt;
-&lt;span class="n"&gt;DIRECT_TEMPLATES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;m.css/pelican-theme&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;THEME_STATIC_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;static&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;DIRECT_TEMPLATES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;index&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
-&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-               &lt;span class="s1"&gt;'https://firebirdtools.github.io/blog/static/m-dark.css'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;M_THEME_COLOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'#22272e'&lt;/span&gt;
+&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+               &lt;span class="s1"&gt;&amp;#39;https://firebirdtools.github.io/blog/static/m-dark.css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;M_THEME_COLOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;#22272e&amp;#39;&lt;/span&gt;
 
-&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.css/pelican-plugins'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.css/pelican-plugins&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.htmlsanity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="c1"&gt;# ================================================================ #&lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
 &lt;section id="gh-pages"&gt;
 &lt;h3&gt;&lt;a href="#gh-pages"&gt;发布于gh-pages分支&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;执行 &lt;code&gt;pip3 install ghp-import&lt;/code&gt; ，ghp-import作用是将目录复制到存储库的gh-pages分支。&lt;/p&gt;
-&lt;pre class="code sh"&gt;firebird&amp;#64;tools:~/github/blog$ pelican content -s publishconf.py
+&lt;pre class="m-code"&gt;firebird@tools:~/github/blog$ pelican content -s publishconf.py
 Done: Processed &lt;span class="m"&gt;1&lt;/span&gt; article, &lt;span class="m"&gt;0&lt;/span&gt; drafts, &lt;span class="m"&gt;0&lt;/span&gt; pages, &lt;span class="m"&gt;0&lt;/span&gt; hidden pages and &lt;span class="m"&gt;0&lt;/span&gt; draft pages in &lt;span class="m"&gt;0&lt;/span&gt;.32 seconds.
-firebird&amp;#64;tools:~/github/blog$ git add .
-firebird&amp;#64;tools:~/github/blog$ git commit -m &lt;span class="s2"&gt;&amp;quot;first blog&amp;quot;&lt;/span&gt;
+firebird@tools:~/github/blog$ git add .
+firebird@tools:~/github/blog$ git commit -m &lt;span class="s2"&gt;&amp;quot;first blog&amp;quot;&lt;/span&gt;
 &lt;span class="o"&gt;[&lt;/span&gt;master 8e133df&lt;span class="o"&gt;]&lt;/span&gt; first blog
  &lt;span class="m"&gt;31&lt;/span&gt; files changed, &lt;span class="m"&gt;10283&lt;/span&gt; insertions&lt;span class="o"&gt;(&lt;/span&gt;+&lt;span class="o"&gt;)&lt;/span&gt;
 ...
-firebird&amp;#64;tools:~/github/blog$ git push -u origin master
-Username &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://github.com'&lt;/span&gt;: firebirdtools
-Password &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools&amp;#64;github.com'&lt;/span&gt;:
+firebird@tools:~/github/blog$ git push -u origin master
+Username &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://github.com&amp;#39;&lt;/span&gt;: firebirdtools
+Password &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://firebirdtools@github.com&amp;#39;&lt;/span&gt;:
 对象计数中: &lt;span class="m"&gt;40&lt;/span&gt;, 完成.
 Delta compression using up to &lt;span class="m"&gt;4&lt;/span&gt; threads.
 压缩对象中: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;38&lt;/span&gt;/38&lt;span class="o"&gt;)&lt;/span&gt;, 完成.
@@ -287,11 +289,11 @@ Total &lt;span class="m"&gt;40&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;
 remote: Resolving deltas: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;12&lt;/span&gt;/12&lt;span class="o"&gt;)&lt;/span&gt;, &lt;span class="k"&gt;done&lt;/span&gt;.
 To https://github.com/firebirdtools/blog.git
    384328f..8e133df  master -&amp;gt; master
-分支 &lt;span class="s1"&gt;'master'&lt;/span&gt; 设置为跟踪来自 &lt;span class="s1"&gt;'origin'&lt;/span&gt; 的远程分支 &lt;span class="s1"&gt;'master'&lt;/span&gt;。
-firebird&amp;#64;tools:~/github/blog$ ghp-import output -b gh-pages
-firebird&amp;#64;tools:~/github/blog$ git push origin gh-pages
-Username &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://github.com'&lt;/span&gt;: firebirdtools
-Password &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools&amp;#64;github.com'&lt;/span&gt;:
+分支 &lt;span class="s1"&gt;&amp;#39;master&amp;#39;&lt;/span&gt; 设置为跟踪来自 &lt;span class="s1"&gt;&amp;#39;origin&amp;#39;&lt;/span&gt; 的远程分支 &lt;span class="s1"&gt;&amp;#39;master&amp;#39;&lt;/span&gt;。
+firebird@tools:~/github/blog$ ghp-import output -b gh-pages
+firebird@tools:~/github/blog$ git push origin gh-pages
+Username &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://github.com&amp;#39;&lt;/span&gt;: firebirdtools
+Password &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://firebirdtools@github.com&amp;#39;&lt;/span&gt;:
 对象计数中: &lt;span class="m"&gt;7&lt;/span&gt;, 完成.
 Delta compression using up to &lt;span class="m"&gt;4&lt;/span&gt; threads.
 压缩对象中: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt;/7&lt;span class="o"&gt;)&lt;/span&gt;, 完成.
@@ -300,17 +302,17 @@ Total &lt;span class="m"&gt;7&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;d
 remote: Resolving deltas: &lt;span class="m"&gt;100&lt;/span&gt;% &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;/4&lt;span class="o"&gt;)&lt;/span&gt;, completed with &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="nb"&gt;local&lt;/span&gt; objects.
 To https://github.com/firebirdtools/blog.git
    7299d46..d732a02  gh-pages -&amp;gt; gh-pages
-firebird&amp;#64;tools:~/github/blog$&lt;/pre&gt;
+firebird@tools:~/github/blog$&lt;/pre&gt;
 &lt;p&gt;打开https://firebirdtools.github.io/blog，可看到带主题的网页&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="publishconf-py-2"&gt;
 &lt;h3&gt;&lt;a href="#publishconf-py-2"&gt;修改publishconf.py 2&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;实际只需设置STATIC_PATHS，就不用在其他地方添加网址了。&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools.github.io/blog'&lt;/span&gt;
-&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-               &lt;span class="s1"&gt;'static/m-dark.css'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;STATIC_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'static'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
-&lt;pre class="code sh"&gt;pelican content -s publishconf.py
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://firebirdtools.github.io/blog&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;M_CSS_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+               &lt;span class="s1"&gt;&amp;#39;static/m-dark.css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;STATIC_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;static&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;pelican content -s publishconf.py
 git add .
 git commit -m &lt;span class="s2"&gt;&amp;quot;first blog&amp;quot;&lt;/span&gt;
 git push -u origin master
@@ -324,7 +326,7 @@ git push origin gh-pages&lt;/pre&gt;
 &lt;section id="siteurl"&gt;
 &lt;h2&gt;&lt;a href="#siteurl"&gt;SITEURL&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;对外发布，则设置url&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'https://firebirdtools.github.io/blog'&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://firebirdtools.github.io/blog&amp;#39;&lt;/span&gt;&lt;/pre&gt;
 &lt;p&gt;本地发布，设置为空&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://mcss.mosra.cz/plugins/htmlsanity/#siteurl-formatting"&gt;https://mcss.mosra.cz/plugins/htmlsanity/#siteurl-formatting&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
@@ -334,38 +336,38 @@ git push origin gh-pages&lt;/pre&gt;
 &lt;p&gt;&lt;a href="https://docs.getpelican.com/en/3.4.0/settings.html?highlight=static_paths"&gt;https://docs.getpelican.com/en/3.4.0/settings.html?highlight=static_paths&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;默认情况下，为 &lt;code&gt;STATIC_PATHS = ['images']&lt;/code&gt; ，但rst文档中采用的是 &lt;code&gt;{static}&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;故，设置如下：&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;STATIC_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'static'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;STATIC_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;static&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
 &lt;hr /&gt;
 &lt;section id="images"&gt;
 &lt;h2&gt;&lt;a href="#images"&gt;images&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://mcss.mosra.cz/plugins/images/#how-to-use"&gt;https://mcss.mosra.cz/plugins/images/#how-to-use&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.css/pelican-plugins'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'m.images'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.css/pelican-plugins&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.htmlsanity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;m.images&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
 &lt;section id="alt"&gt;
 &lt;h2&gt;&lt;a href="#alt"&gt;:alt:&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://mcss.mosra.cz/plugins/images/#images-figures"&gt;https://mcss.mosra.cz/plugins/images/#images-figures&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;M_IMAGES_REQUIRE_ALT_TEXT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;M_IMAGES_REQUIRE_ALT_TEXT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
 &lt;section id="math"&gt;
 &lt;h2&gt;&lt;a href="#math"&gt;math&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://mcss.mosra.cz/plugins/math-and-code/#math"&gt;https://mcss.mosra.cz/plugins/math-and-code/#math&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'m.math'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.htmlsanity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;m.math&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;M_MATH_RENDER_AS_CODE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
-&lt;span class="n"&gt;M_MATH_CACHE_FILE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'m.math.cache'&lt;/span&gt;&lt;/pre&gt;
+&lt;span class="n"&gt;M_MATH_CACHE_FILE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;m.math.cache&amp;#39;&lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
 &lt;section id="components"&gt;
 &lt;h2&gt;&lt;a href="#components"&gt;components&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://mcss.mosra.cz/plugins/components/#how-to-use"&gt;https://mcss.mosra.cz/plugins/components/#how-to-use&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'m.components'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.htmlsanity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;m.components&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
 &lt;section id="metadata"&gt;
 &lt;h2&gt;&lt;a href="#metadata"&gt;metadata&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;元数据可以进行一些搜索引擎的优化，包含博文的一些基础信息。&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://docs.getpelican.com/en/stable/content.html#file-metadata"&gt;https://docs.getpelican.com/en/stable/content.html#file-metadata&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://mcss.mosra.cz/plugins/metadata/#how-to-use"&gt;https://mcss.mosra.cz/plugins/metadata/#how-to-use&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="code rst"&gt;&lt;span class="gh"&gt;My super title&lt;/span&gt;
+&lt;pre class="m-code"&gt;&lt;span class="gh"&gt;My super title&lt;/span&gt;
 &lt;span class="gh"&gt;##############&lt;/span&gt;
 
 &lt;span class="nc"&gt;:date:&lt;/span&gt; &lt;span class="nf"&gt;2010-10-03 10:20&lt;/span&gt;
@@ -376,19 +378,19 @@ git push origin gh-pages&lt;/pre&gt;
 &lt;span class="nc"&gt;:authors:&lt;/span&gt; &lt;span class="nf"&gt;Alexis Metaireau, Conan Doyle&lt;/span&gt;
 &lt;span class="nc"&gt;:summary:&lt;/span&gt; &lt;span class="nf"&gt;Short version for index and feeds&lt;/span&gt;&lt;/pre&gt;
 &lt;p&gt;add the new fields to FORMATTED_FIELDS&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.metadata'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;FORMATTED_FIELDS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'description'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'badge'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.metadata&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;FORMATTED_FIELDS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;description&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;badge&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
 &lt;p&gt;默认情况下如下所示：&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;M_METADATA_AUTHOR_PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'authors'&lt;/span&gt;
-&lt;span class="n"&gt;M_METADATA_CATEGORY_PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'categories'&lt;/span&gt;
-&lt;span class="n"&gt;M_METADATA_TAG_PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'tags'&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;M_METADATA_AUTHOR_PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;authors&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;M_METADATA_CATEGORY_PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;categories&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;M_METADATA_TAG_PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;tags&amp;#39;&lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
 &lt;section id="blocks-notes-frame"&gt;
 &lt;h2&gt;&lt;a href="#blocks-notes-frame"&gt;blocks-notes-frame&lt;/a&gt;&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;a href="https://mcss.mosra.cz/plugins/components/#blocks-notes-frame"&gt;https://mcss.mosra.cz/plugins/components/#blocks-notes-frame&lt;/a&gt;&lt;/blockquote&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m.htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'m.components'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
-&lt;pre class="code rst"&gt;&lt;span class="p"&gt;..&lt;/span&gt; &lt;span class="ow"&gt;block-danger&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt; Danger block
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m.htmlsanity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;m.components&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-code"&gt;&lt;span class="p"&gt;..&lt;/span&gt; &lt;span class="ow"&gt;block-danger&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt; Danger block
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices a
     erat eu suscipit. &lt;span class="s"&gt;`Link. &lt;/span&gt;&lt;span class="si"&gt;&amp;lt;#&amp;gt;&lt;/span&gt;&lt;span class="s"&gt;`_&lt;/span&gt;
@@ -412,7 +414,16 @@ git push origin gh-pages&lt;/pre&gt;
 &lt;section id="code"&gt;
 &lt;h2&gt;&lt;a href="#code"&gt;Code&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://mcss.mosra.cz/plugins/math-and-code/#code"&gt;https://mcss.mosra.cz/plugins/math-and-code/#code&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="code py"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'m-htmlsanity'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'m.code'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#code"&gt;http://docutils.sourceforge.net/docs/ref/rst/roles.html#code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://mcss.mosra.cz/plugins/math-and-code/#code"&gt;https://mcss.mosra.cz/plugins/math-and-code/#code&lt;/a&gt;&lt;/p&gt;
+&lt;pre class="m-code"&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;m-htmlsanity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;m.code&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class="m-inverted m-code"&gt;&lt;span class="hll"&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class="hll"&gt;
+&lt;/span&gt;&lt;span class="hll"&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class="hll"&gt;    &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;span class="hll"&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;span class="hll"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
 </content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>Test Images-figures</title><link href="https://firebirdtools.github.io/blog/test-images-figures.html" rel="alternate"></link><published>2019-01-15T00:00:00+01:00</published><updated>2019-01-15T00:00:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-15:/blog/test-images-figures.html</id><summary type="html">&lt;p&gt;Images, figures&lt;/p&gt;
 </summary><content type="html">&lt;section id="images-figures"&gt;
@@ -1247,4 +1258,29 @@ f = \infty
 &lt;/svg&gt;.&lt;/p&gt;
 &lt;/figure&gt;
 &lt;/section&gt;
-</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry></feed>
+</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>hexdump for VSCode</title><link href="https://firebirdtools.github.io/blog/hexdump-for-vscode.html" rel="alternate"></link><published>2019-01-13T00:00:00+01:00</published><updated>2019-01-13T00:00:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-13:/blog/hexdump-for-vscode.html</id><summary type="html">&lt;p&gt;以十六进制显示指定的文件&lt;/p&gt;
+</summary><content type="html">&lt;section id="id1"&gt;
+&lt;h2&gt;主要特点&lt;/h2&gt;
+&lt;p&gt;右键单击资源管理器中的文件以查看Show Hexdump
+显示hexdump&lt;/p&gt;
+&lt;p&gt;将鼠标悬停在数据部分中以查看数值
+悬停DataView&lt;/p&gt;
+&lt;p&gt;将选项悬停在一个字符串中进行预览
+悬停字符串&lt;/p&gt;
+&lt;p&gt;右键单击hexdump以查看更多选项
+上下文菜单&lt;/p&gt;
+&lt;p&gt;着色修改后的字节
+修改字节&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="id2"&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装Visual Studio代码（1.17.0或更高版本）&lt;/li&gt;
+&lt;li&gt;启动代码&lt;/li&gt;
+&lt;li&gt;从命令面板ctrl+shift+p（Windows，Linux）或cmd+shift+p（OS X）&lt;/li&gt;
+&lt;li&gt;选择 Install Extension&lt;/li&gt;
+&lt;li&gt;选择扩展名 hexdump for VSCode&lt;/li&gt;
+&lt;li&gt;重新加载Visual Studio代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content><category term="VSCode"></category><category term="hex"></category></entry><entry><title>My First Review</title><link href="https://firebirdtools.github.io/blog/my-first-review.html" rel="alternate"></link><published>2010-12-03T10:20:00+01:00</published><updated>2010-12-03T10:20:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2010-12-03:/blog/my-first-review.html</id><summary type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content></entry></feed>
