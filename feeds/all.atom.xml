@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="https://firebirdtools.github.io/blog/" rel="alternate"></link><link href="https://firebirdtools.github.io/blog/feeds/all.atom.xml" rel="self"></link><id>https://firebirdtools.github.io/blog/</id><updated>2019-01-15T00:00:00+01:00</updated><entry><title>mcss-pelican-git blog full</title><link href="https://firebirdtools.github.io/blog/mcss-pelican-git-blog-full.html" rel="alternate"></link><published>2019-01-15T00:00:00+01:00</published><updated>2019-01-15T00:00:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-15:/blog/mcss-pelican-git-blog-full.html</id><summary type="html">&lt;p&gt;完整过程&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog</title><link href="https://firebirdtools.github.io/blog/" rel="alternate"></link><link href="https://firebirdtools.github.io/blog/feeds/all.atom.xml" rel="self"></link><id>https://firebirdtools.github.io/blog/</id><updated>2019-01-15T00:00:00+08:00</updated><entry><title>mcss-pelican-git blog full</title><link href="https://firebirdtools.github.io/blog/mcss-pelican-git-blog-full.html" rel="alternate"></link><published>2019-01-15T00:00:00+08:00</published><updated>2019-01-15T00:00:00+08:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-15:/blog/mcss-pelican-git-blog-full.html</id><summary type="html">&lt;p&gt;完整过程&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;&lt;a href="https://mcss.mosra.cz/"&gt;mcss网站&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;section id="github"&gt;
@@ -320,7 +320,7 @@ ghp-import output -b gh-pages
 git push origin gh-pages&lt;/pre&gt;
 &lt;/section&gt;
 &lt;/section&gt;
-</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>publishconf</title><link href="https://firebirdtools.github.io/blog/publishconf.html" rel="alternate"></link><published>2019-01-15T00:00:00+01:00</published><updated>2019-01-15T00:00:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-15:/blog/publishconf.html</id><summary type="html">&lt;p&gt;publishconf&lt;/p&gt;
+</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>publishconf</title><link href="https://firebirdtools.github.io/blog/publishconf.html" rel="alternate"></link><published>2019-01-15T00:00:00+08:00</published><updated>2019-01-15T00:00:00+08:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-15:/blog/publishconf.html</id><summary type="html">&lt;p&gt;publishconf&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;&lt;a href="https://mcss.mosra.cz/"&gt;mcss网站&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;section id="siteurl"&gt;
@@ -425,7 +425,7 @@ git push origin gh-pages&lt;/pre&gt;
 &lt;/span&gt;&lt;span class="hll"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/pre&gt;
 &lt;/section&gt;
-</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>Test Images-figures</title><link href="https://firebirdtools.github.io/blog/test-images-figures.html" rel="alternate"></link><published>2019-01-15T00:00:00+01:00</published><updated>2019-01-15T00:00:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-15:/blog/test-images-figures.html</id><summary type="html">&lt;p&gt;Images, figures&lt;/p&gt;
+</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>Test Images-figures</title><link href="https://firebirdtools.github.io/blog/test-images-figures.html" rel="alternate"></link><published>2019-01-15T00:00:00+08:00</published><updated>2019-01-15T00:00:00+08:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-15:/blog/test-images-figures.html</id><summary type="html">&lt;p&gt;Images, figures&lt;/p&gt;
 </summary><content type="html">&lt;section id="images-figures"&gt;
 &lt;h2&gt;&lt;a href="#images-figures"&gt;Images, figures&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;All images should have no &lt;code&gt;alt&lt;/code&gt; text, unless specified manually.&lt;/p&gt;
@@ -478,7 +478,7 @@ git push origin gh-pages&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>Test Math</title><link href="https://firebirdtools.github.io/blog/test-math.html" rel="alternate"></link><published>2019-01-15T00:00:00+01:00</published><updated>2019-01-15T00:00:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-15:/blog/test-math.html</id><summary type="html">&lt;p&gt;Math&lt;/p&gt;
+</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>Test Math</title><link href="https://firebirdtools.github.io/blog/test-math.html" rel="alternate"></link><published>2019-01-15T00:00:00+08:00</published><updated>2019-01-15T00:00:00+08:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-15:/blog/test-math.html</id><summary type="html">&lt;p&gt;Math&lt;/p&gt;
 </summary><content type="html">&lt;section id="math"&gt;
 &lt;h2&gt;Math&lt;/h2&gt;
 &lt;p&gt;First is colored except &lt;svg class="m-math" style="width: 0.966em; height: 0.987em; vertical-align: -0.000em;" viewBox="0 -9.474739 9.272171 9.474739"&gt;
@@ -1258,7 +1258,7 @@ f = \infty
 &lt;/svg&gt;.&lt;/p&gt;
 &lt;/figure&gt;
 &lt;/section&gt;
-</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>hexdump for VSCode</title><link href="https://firebirdtools.github.io/blog/hexdump-for-vscode.html" rel="alternate"></link><published>2019-01-13T00:00:00+01:00</published><updated>2019-01-13T00:00:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-13:/blog/hexdump-for-vscode.html</id><summary type="html">&lt;p&gt;以十六进制显示指定的文件&lt;/p&gt;
+</content><category term="Pelican"></category><category term="mcss"></category><category term="re­Struc­tured­Text"></category><category term="git"></category></entry><entry><title>hexdump for VSCode</title><link href="https://firebirdtools.github.io/blog/hexdump-for-vscode.html" rel="alternate"></link><published>2019-01-13T00:00:00+08:00</published><updated>2019-01-13T00:00:00+08:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2019-01-13:/blog/hexdump-for-vscode.html</id><summary type="html">&lt;p&gt;以十六进制显示指定的文件&lt;/p&gt;
 </summary><content type="html">&lt;section id="id1"&gt;
 &lt;h2&gt;主要特点&lt;/h2&gt;
 &lt;p&gt;右键单击资源管理器中的文件以查看Show Hexdump
@@ -1283,4 +1283,4 @@ f = \infty
 &lt;li&gt;重新加载Visual Studio代码&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content><category term="VSCode"></category><category term="hex"></category></entry><entry><title>My First Review</title><link href="https://firebirdtools.github.io/blog/my-first-review.html" rel="alternate"></link><published>2010-12-03T10:20:00+01:00</published><updated>2010-12-03T10:20:00+01:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2010-12-03:/blog/my-first-review.html</id><summary type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content></entry></feed>
+</content><category term="VSCode"></category><category term="hex"></category></entry><entry><title>My First Review</title><link href="https://firebirdtools.github.io/blog/my-first-review.html" rel="alternate"></link><published>2010-12-03T10:20:00+08:00</published><updated>2010-12-03T10:20:00+08:00</updated><author><name>firebird</name></author><id>tag:firebirdtools.github.io,2010-12-03:/blog/my-first-review.html</id><summary type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content></entry></feed>
