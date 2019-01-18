@@ -84,9 +84,9 @@ SITENAME = 'blog'
 
 
 # =============================================================================
-M_FAVICON = ('firebird.png')
-M_LINKS_NAVBAR1 = [('FBL', 'https://www.firebirdtool.com/', 'FBL', []),                   
-                   ('cpplogging-doc', 'https://www.firebirdtool.com/doc-cpplogging/', 'cpplogging-doc', [
+M_FAVICON = ('firebird.png', 'image/x-icon')
+M_LINKS_NAVBAR1 = [('FBT', 'https://www.firebirdtool.com/', '', []),                   
+                   ('Docs', 'https://www.firebirdtool.com/doc-cpplogging/', '', [
                         ])]
 
 
